@@ -68,7 +68,6 @@
 	a {
 		display: inline-block;
 		margin: 0 3px;
-		color: darken($text-color, 6.67);
 		border-bottom: 1px dotted $text-color;
 		&:hover {
 			color: lighten($text-color, 6.67);

@@ -4,7 +4,8 @@
 
 //-------------------- Base Colors --------------------//
 
-$theme-color:                   		#1ABC9C;
+$theme-color:                   		#40a48a;
+$theme-gold:							#dab047;
 $body-text-color:               		#555;
 
 $white:									#FFF; // White
@@ -119,9 +120,9 @@ $spacers: map-merge(
 
 //-------------------- Font Families --------------------//
 
-$body-font:                     		'Lato', sans-serif;
-$heading-font:                  		'Poppins', sans-serif;
-$secondary-font:                		'PT Serif', serif;
+$body-font:                     		'Roboto', sans-serif;
+$heading-font:                  		'Roboto', sans-serif;
+$secondary-font:                		'Roboto', sans-serif;
 
 
 //-------------------- Page Loader Spinners --------------------//
@@ -623,10 +624,10 @@ $pricing-title-font-color:				lighten($pricing-base-color, 6.67%);
 
 $pricing-price-padding:					$pricing-title-padding * 1.5;
 $pricing-price-color:					darken($pricing-base-color, 6.67%);
-$pricing-price-font-size:				4rem;
+$pricing-price-font-size:				2.5rem;
 $pricing-price-bottom-border-width:		100px;
 $pricing-price-bottom-border-size:		$pricing-border-size solid rgba($black,0.1);
-$pricing-price-currency-icon:			$pricing-price-font-size * .435;
+$pricing-price-currency-icon:			$pricing-price-font-size * .535;
 $pricing-price-month:					$pricing-price-currency-icon * .571;
 
 $pricing-features-padding:				$pricing-title-padding * 2;
