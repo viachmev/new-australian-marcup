@@ -1,16 +1,33 @@
 .accommodation-hero {
   &__top {
+    display: flex;
+    align-items: center;
     height: 350px;
-    padding-top: 120px;
+    z-index: 1;
 
-    @include media-breakpoint-down(sm) {
-      padding-top: 120px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,.25);
+      z-index: -1;
     }
 
     h1 {
-      font-size: 100px;
+      font-size: 48px;
       line-height: 1;
       color: white;
+
+      @include media-breakpoint-up(md) {
+        font-size: 100px;
+      }
+
+      @media (max-width: 320px) {
+        font-size: 42px;
+      }
     }
   }
 
@@ -195,4 +212,12 @@
   border-color: transparent;
   background-color: #2C3E50;
   color: #FFF;
+}
+
+//
+.info-panel {
+  padding: 15px 0;
+  .button:hover {
+    background-color: $theme-color;
+  }
 }
