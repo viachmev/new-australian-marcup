@@ -107,3 +107,22 @@
     line-height: 1;
   }
 }
+
+// accommodation index
+.hotel-price {
+  display: block;
+  font-size: 40px;
+  color: $theme-color;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 1px;
+}
+
+.rating-xs {
+  font-size: 15px!important;
+
+  .star i {
+    top: 0;
+    margin-right: 0;
+  }
+}
