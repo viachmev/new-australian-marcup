@@ -1148,7 +1148,7 @@ var SEMICOLON = SEMICOLON || {};
 						}
 					}
 				} else {
-					$sliderParallaxEl.addClass('slider-parallax-invisible').removeClass('slider-parallax-visible');
+					// $sliderParallaxEl.addClass('slider-parallax-invisible').removeClass('slider-parallax-visible');
 				}
 
 				requestAnimationFrame(function(){
