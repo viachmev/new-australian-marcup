@@ -15,22 +15,24 @@
         }
 
         @media (max-width: 991.98px) {
-            .slider-text {
-                font-size: 7vw;
-            }
         }
     </style>
 </head>
 <body>
-    <section id="slider" class="slider-element min-vh-100 include-header parallax" style="height: 750px">
+    <section id="slider" class="slider-element min-vh-100 include-header hero-parallax parallax" style="height: 100vh">
+        <div class="mini-map">
+            <img src="images/australia.svg" alt="australia">
+            <div class="dot-pulse" style="top: 10px; right: 10px">
+                <i class="icon-heart"></i>
+            </div>
+        </div>
         <div class="shape-divider" style="z-index: 11" data-shape="wave-4" data-position="bottom" data-height="100" id="shape-divider-6341"></div>
         <div class="w-100 h-100 position-absolute" style="background: url('images/parallax/parallax-1.png') center center no-repeat; background-size: cover;" data-0-top="top: 0px" data-900="top: 300px"></div>
-        <div class="w-100 h-100 position-absolute" style="background: url('images/parallax/parallax-2.png') center center no-repeat; background-size: cover; z-index: 8" data-0="top:0px" data-900="top: 140px"></div>
         <div class="w-100 h-100 position-absolute" style="background: url('images/parallax/parallax-3.png') center bottom no-repeat; background-size: cover; z-index: 9"></div>
 
         <div class="container">
             <div class="vertical-middle">
-                <h1 class="slider-text text-uppercase text-center font-weight-bolder text-white" data-0="margin-top: -350px; opacity: 1" data-450="margin-top: 0px; opacity: .4">The Withsundays</h1>
+                <h1 class="slider-text text-uppercase text-center font-weight-bolder text-white" data-0="margin-top: -400px; opacity: 1" data-450="margin-top: 0px; opacity: .4">The Withsundays</h1>
             </div>
         </div>
 
@@ -73,14 +75,14 @@
     </section>
 
     <section class="position-relative">
-        <div class="shape-divider" data-shape="wave-4" data-position="top" data-height="100" id="shape-divider-6342"></div>
-        <div class="shape-divider" data-shape="wave-4" data-position="bottom" data-height="100" id="shape-divider-6343"></div>
+        <div class="shape-divider d-none d-md-block" data-shape="wave-4" data-position="top" data-height="80" id="shape-divider-6342"></div>
+        <div class="shape-divider d-none d-md-block" data-shape="wave-4" data-position="bottom" data-height="80" id="shape-divider-6343"></div>
         <iframe src="https://player.vimeo.com/video/94842405?title=0&byline=0&portrait=0" width="1280" height="720" allow="autoplay; fullscreen" allowfullscreen></iframe>
     </section>
 
     <section>
         <div class="container">
-            <div class="row col-mb-30 py-5 my-5">
+            <div class="row col-mb-30 py-4 my-4 py-lg-5 my-lg-5">
                 <div class="row mx-0 px-0 col-12">
                     <div class="col-12 col-sm-7 col-lg-8">
                         <h3 class="color font-weight-normal mb-2">SUB HEADLINE HERE</h3>
@@ -141,10 +143,10 @@
 
     <section>
         <section class="position-relative">
-            <div class="shape-divider" style="z-index: 11;" data-shape="wave-4" data-position="top" data-height="100" id="shape-divider-6344"></div>
-            <div class="shape-divider" style="z-index: 11;" data-shape="wave-4" data-position="bottom" data-height="100" id="shape-divider-6345"></div>
+            <div class="shape-divider d-none d-md-block" style="z-index: 11;" data-shape="wave-4" data-position="top" data-height="80" id="shape-divider-6344"></div>
+            <div class="shape-divider d-none d-md-block" style="z-index: 11;" data-shape="wave-4" data-position="bottom" data-height="80" id="shape-divider-6345"></div>
             <div class="fslider bottommargin-sm" data-smooth-height="false" data-arrows="true" data-animation="fade" data-pagi="false">
-                <div class="flexslider max-vh-lg-75">
+                <div class="flexslider max-vh-lg-80">
                     <div class="slider-wrap">
                         <div class="slide"><img src="images/wedding/11.jpg" alt="Image"></div>
                         <div class="slide"><img src="images/wedding/15.jpg" alt="Image"></div>
@@ -162,7 +164,7 @@
 
     <section>
         <div class="container">
-            <div class="row col-mb-30 py-5 my-5">
+            <div class="row col-mb-30 py-4 my-4 py-lg-5 my-lg-5">
                 <div class="row mx-0 px-0 col-12">
                     <div class="col-12 col-sm-7 col-lg-8">
                         <h3 class="color font-weight-normal mb-2">SUB HEADLINE HERE</h3>
@@ -214,6 +216,10 @@
 
         <iframe src="https://player.vimeo.com/video/355120249?title=0&byline=0&portrait=0" width="1280" height="720" allow="autoplay; fullscreen; accelerometer; gyroscope;" allowfullscreen></iframe>
     </section>
+    
+    <sectiion>
+        <img src="images/content-placeholder.png" width="100%" alt="">
+    </sectiion>
 
     <section class="position-relative">
         <div class="shape-divider" style="z-index: 11" data-shape="valley" data-position="top" data-height="80" data-flip="true" data-flip-vertical="true" data-fill="#FFF" id="shape-divider-740"></div>
@@ -241,9 +247,15 @@
 
                 <div class="row">
                     <div class="col-md-5">
-                        <div class="emphasis-title">
-                            <h2>Seriously Parallaxical</h2>
-                            <p class="lead topmargin-sm">Create beautiful unlimited full-screen parallax defined backgrounds to spell bound your visitors.</p>
+                        <div class="content-parallax">
+                            <h2 class="color font-weight-light"><span class="pacifico">Seriously</span> parallaxical</h2>
+                            <p class="lead topmargin-sm">Create beautiful unlimited full-screen parallax defined backgrounds to spell bound your visitors.
+                                <a href="#" class="btn btn-outline-secondary text-uppercase px-1 py-0">
+                                    <i class="icon-heart"></i>
+                                    <span>History</span>
+                                    <i class="icon-line-arrow-right"></i>
+                                </a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -253,19 +265,16 @@
     </div>
 
     <section class="position-relative">
+        <div class="shape-divider" style="z-index: 11" data-shape="valley" data-position="top" data-height="80" data-flip="true" data-flip-vertical="true" data-fill="#FFF" id="shape-divider-742"></div>
+        <div class="shape-divider" style="z-index: 11" data-shape="valley" data-position="bottom" data-height="80" data-flip="true" data-flip-vertical="true" data-fill="#FFF" id="shape-divider-743"></div>
         <div class="time-title time-title-top"><span class="pacifico">Beautiful</span> in the morning</div>
         <div class="time-title time-title-bottom"><span class="pacifico">Perfect</span> at night</div>
-        <div id="slider2" class="slider-element slider-parallax min-vh-100 slider-parallax-visible">
-            <div class="shape-divider" style="z-index: 11" data-shape="valley" data-position="top" data-height="80" data-flip="true" data-flip-vertical="true" data-fill="#FFF" id="shape-divider-742"></div>
-            <div class="shape-divider" style="z-index: 11" data-shape="valley" data-position="bottom" data-height="80" data-flip="true" data-flip-vertical="true" data-fill="#FFF" id="shape-divider-743"></div>
+        <div id="slider" class="slider-element slider-parallax min-vh-100 slider-parallax-visible">
             <div class="slider-inner" style="position: relative">
 
                 <div class="row align-items-stretch text-center dark w-100 h-100 mx-0 position-absolute">
 
                     <div class="col-6 px-0 dark videoplay-on-hover">
-                        <div class="vertical-middle text-center slider-element-fade">
-                            <h2 class="mb-0 ls1 font-body">different.</h2>
-                        </div>
                         <div class="video-wrap">
                             <video poster="images/videos/1.jpg" preload="auto" loop muted>
                                 <source src='images/videos/1.webm' type='video/webm' />
@@ -275,9 +284,6 @@
                         </div>
                     </div>
                     <div class="col-6 px-0 dark videoplay-on-hover">
-                        <div class="vertical-middle text-center slider-element-fade">
-                            <h2 class="mb-0 ls1 font-body">powerful.</h2>
-                        </div>
                         <div class="video-wrap">
                             <video poster="images/videos/3.jpg" preload="auto" loop muted>
                                 <source src='images/videos/3.webm' type='video/webm' />
@@ -287,9 +293,6 @@
                         </div>
                     </div>
                     <div class="col-6 px-0 dark videoplay-on-hover">
-                        <div class="vertical-middle text-center slider-element-fade">
-                            <h2 class="mb-0 ls1 font-body">different.</h2>
-                        </div>
                         <div class="video-wrap">
                             <video poster="images/videos/1.jpg" preload="auto" loop muted>
                                 <source src='images/videos/1.webm' type='video/webm' />
@@ -299,9 +302,6 @@
                         </div>
                     </div>
                     <div class="col-6 px-0 dark videoplay-on-hover">
-                        <div class="vertical-middle text-center slider-element-fade">
-                            <h2 class="mb-0 ls1 font-body">powerful.</h2>
-                        </div>
                         <div class="video-wrap">
                             <video poster="images/videos/3.jpg" preload="auto" loop muted>
                                 <source src='images/videos/3.webm' type='video/webm' />
@@ -696,7 +696,8 @@
         <div id="google-map" style="height: 75vh;" data-latitude="-20.3917753" data-longitude="148.7816005" data-zoom="10" data-scrollwheel="false" data-control-zoom="true" data-control-streetview="true" data-styles='[{"featureType":"all","elementType":"geometry","stylers":[{"color":"#ebe3cd"}]},{"featureType":"all","elementType":"labels.text.fill","stylers":[{"color":"#523735"}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"color":"#f5f1e6"}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#c9b2a6"}]},{"featureType":"administrative.land_parcel","elementType":"geometry.stroke","stylers":[{"color":"#dcd2be"}]},{"featureType":"administrative.land_parcel","elementType":"labels.text.fill","stylers":[{"color":"#ae9e90"}]},{"featureType":"landscape.natural","elementType":"geometry","stylers":[{"color":"#dfd2ae"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#dfd2ae"}]},{"featureType":"poi","elementType":"labels.text.fill","stylers":[{"color":"#93817c"}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"color":"#a5b076"}]},{"featureType":"poi.park","elementType":"labels.text.fill","stylers":[{"color":"#447530"}]},{"featureType":"road","elementType":"geometry","stylers":[{"color":"#f5f1e6"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#e498d0"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#e9bc62"}]},{"featureType":"road.highway.controlled_access","elementType":"geometry","stylers":[{"color":"#e498d0"}]},{"featureType":"road.highway.controlled_access","elementType":"geometry.stroke","stylers":[{"color":"#db8555"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#fdfcf8"}]},{"featureType":"road.local","elementType":"labels.text.fill","stylers":[{"color":"#806b63"}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"color":"#dfd2ae"}]},{"featureType":"transit.line","elementType":"labels.text.fill","stylers":[{"color":"#8f7d77"}]},{"featureType":"transit.line","elementType":"labels.text.stroke","stylers":[{"color":"#ebe3cd"}]},{"featureType":"transit.station","elementType":"geometry","stylers":[{"color":"#dfd2ae"}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#a5d7bb"}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"color":"#92998d"}]}]' class="gmap"></div>
     </section>
 
-    <section>
+    <section class="position-relative">
+        <div class="shape-divider" style="z-index: 11" data-shape="valley" data-position="bottom" data-height="60" data-flip="true" data-flip-vertical="true" data-fill="#FFF" id="shape-divider-7394"></div>
         <div class="section m-0 position-relative" style="background: #40a48a;">
             <div class="shape-divider" style="z-index: 11" data-shape="valley" data-position="top" data-height="80" data-flip="true" data-flip-vertical="true" data-fill="#FFF" id="shape-divider-7393"></div>
             <div class="container">
@@ -726,7 +727,7 @@
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="flip-card text-center">
-                        <div class="flip-card-front dark" style="background-image: url('images/featured/1.jpg')">
+                        <div class="flip-card-front dark" style="background-image: url('images/giphy.gif')">
                             <div class="flip-card-inner">
                                 <div class="card bg-transparent border-0 text-center">
                                     <div class="card-body">
@@ -750,6 +751,63 @@
                                 <div class="card bg-transparent border-0 text-center">
                                     <div class="card-body">
                                         <h3 class="card-title pacifico">High</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back bg-danger no-after">
+                            <div class="flip-card-inner">
+                                <p class="mb-2 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit.</p>
+                                <button type="button" class="btn btn-outline-light mt-2">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="flip-card text-center">
+                        <div class="flip-card-front dark" style="background-image: url('images/featured/1.jpg')">
+                            <div class="flip-card-inner">
+                                <div class="card bg-transparent border-0 text-center">
+                                    <div class="card-body">
+                                        <h3 class="card-title pacifico">Dry</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back bg-danger no-after">
+                            <div class="flip-card-inner">
+                                <p class="mb-2 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit.</p>
+                                <button type="button" class="btn btn-outline-light mt-2">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="flip-card text-center">
+                        <div class="flip-card-front dark" style="background-image: url('images/featured/1.jpg')">
+                            <div class="flip-card-inner">
+                                <div class="card bg-transparent border-0 text-center">
+                                    <div class="card-body">
+                                        <h3 class="card-title pacifico">Cold</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back bg-danger no-after">
+                            <div class="flip-card-inner">
+                                <p class="mb-2 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit.</p>
+                                <button type="button" class="btn btn-outline-light mt-2">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="flip-card text-center">
+                        <div class="flip-card-front dark" style="background-image: url('images/giphy.gif')">
+                            <div class="flip-card-inner">
+                                <div class="card bg-transparent border-0 text-center">
+                                    <div class="card-body">
+                                        <h3 class="card-title pacifico">Low</h3>
                                     </div>
                                 </div>
                             </div>
