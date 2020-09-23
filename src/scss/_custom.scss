@@ -126,6 +126,7 @@
     z-index: -1;
   }
 
+  // unused style (subtitle moved to bottom)
   .subtitle {
     margin-top: 30px;
     font-size: 25px;
@@ -138,6 +139,7 @@
       font-size: 35px;
     }
   }
+  //
 
   h1 {
     font-size: 48px;
@@ -150,6 +152,33 @@
 
     @media (max-width: 320px) {
       font-size: 42px;
+    }
+  }
+}
+
+.found-result {
+  font-size: 25px;
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    font-size: 32px;
+  }
+}
+
+.product-list {
+  .entry {
+    margin-bottom: 40px;
+    position: relative;
+
+    &:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: calc(100% - 40px);
+      height: 2px;
+      transform: translateX(-50%);
+      background: $line-color;
     }
   }
 }
