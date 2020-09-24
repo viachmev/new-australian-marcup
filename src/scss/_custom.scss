@@ -250,6 +250,12 @@
   }
 }
 
+.text-boxes-row {
+  p {
+    line-height: 2rem;
+  }
+}
+
 .time-title {
   position: absolute;
   z-index: 12;
@@ -258,24 +264,32 @@
   transform: translateX(-50%);
   text-align: center;
   line-height: 1;
-  font-size: 70px;
+  font-size: 50px;
 
   @include media-breakpoint-up(md) {
-    font-size: 100px;
+    font-size: 70px;
   }
 
   @include media-breakpoint-up(lg) {
-    font-size: 140px;
+    font-size: 100px;
   }
 
   &-top {
-    top: -75px;
+    top: -40px;
     color: #D5A647;
+
+    @include media-breakpoint-up(lg) {
+      top: -55px
+    }
   }
 
   &-bottom {
-    bottom: -50px;
+    bottom: -20px;
     color: #646464;
+
+    @include media-breakpoint-up(lg) {
+      bottom: -30px;
+    }
   }
 
   .pacifico {
@@ -350,5 +364,64 @@
   }
 }
 
+.title-down {
+  position: relative;
+  top: 15px;
+}
+
 .owl-carousel .owl-video-playing .owl-video-play-icon,
 .owl-carousel .owl-video-playing .owl-video-tn { display:none }
+
+// tour package
+.step-line {
+  .row:not(:last-of-type) {
+    .fbox-icon-wrap {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 65px;
+        left: 28px;
+        width: 2px;
+        height: calc(100% - 25px);
+        background-color: #EEE;
+        z-index: 0;
+      }
+    }
+  }
+
+  .fbox-border.fbox-light:not(:hover) .fbox-icon i {
+    color: $black;
+  }
+
+  .fbox-border.fbox-effect .fbox-icon i::after {
+    background-color: $theme-color;
+  }
+
+  .fbox-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: 0;
+    background: $white;
+    border-radius: 50%;
+    z-index: 1;
+
+    i {
+      line-height: 3.5rem;
+    }
+  }
+
+  .fbox-content {
+
+    p {
+      color: $gray-700;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font-size: $h3-font-size;
+      text-transform: none;
+    }
+  }
+}
