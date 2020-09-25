@@ -7,39 +7,57 @@
     <title>Content Page</title>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/font-icons.css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
     <link rel="stylesheet" href="dist/style.css">
-    <style>
-        .slider-text {
-            font-size: 100px;
-            line-height: 1;
-        }
-
-        @media (max-width: 991.98px) {
-            .slider-text {
-                font-size: 7vw;
-            }
-        }
-    </style>
 </head>
 <body>
-    <section id="slider" class="slider-element min-vh-100 include-header parallax" style="height: 750px">
+    <section id="slider" class="slider-element min-vh-100 include-header hero-parallax parallax" style="height: 100vh">
+        <div class="mini-map">
+            <img src="images/australia.svg" alt="australia">
+            <div class="dot-pulse" style="top: 10px; right: 10px">
+                <i class="icon-heart"></i>
+            </div>
+        </div>
         <div class="shape-divider" style="z-index: 11" data-shape="wave-4" data-position="bottom" data-height="100" id="shape-divider-6341"></div>
         <div class="w-100 h-100 position-absolute" style="background: url('images/parallax/parallax-1.png') center center no-repeat; background-size: cover;" data-0-top="top: 0px" data-900="top: 300px"></div>
-        <div class="w-100 h-100 position-absolute" style="background: url('images/parallax/parallax-2.png') center center no-repeat; background-size: cover; z-index: 8" data-0="top:0px" data-900="top: 140px"></div>
         <div class="w-100 h-100 position-absolute" style="background: url('images/parallax/parallax-3.png') center bottom no-repeat; background-size: cover; z-index: 9"></div>
 
         <div class="container">
             <div class="vertical-middle">
-                <h1 class="slider-text text-uppercase text-center font-weight-bolder text-white" data-0="margin-top: -350px; opacity: 1" data-450="margin-top: 0px; opacity: .4">The Withsundays</h1>
+                <h1 class="slider-text text-uppercase text-center font-weight-bolder text-white" data-0="margin-top: -400px; opacity: 1" data-450="margin-top: 0px; opacity: .4">The Withsundays</h1>
             </div>
         </div>
 
     </section>
 
+    <section id="slider" class="slider-element hero-parallax video-bg min-vh-100">
+        <div class="mini-map">
+            <img src="images/australia.svg" alt="australia">
+            <div class="dot-pulse" style="top: 10px; right: 10px">
+                <i class="icon-heart"></i>
+            </div>
+        </div>
+        <div class="shape-divider" style="z-index: 11" data-shape="wave-4" data-position="bottom" data-height="100" id="shape-divider-6341"></div>
+        <div class="slider-inner">
+
+            <div class="container">
+                <div class="slider-caption slider-caption-center">
+                    <h1 class="text-white text-uppercase" data-animate="fadeInUp">The Withsundays</h1>
+                </div>
+            </div>
+
+            <div class="video-wrap" style="z-index: 1;">
+                <iframe class="no-fv" src="https://player.vimeo.com/video/112836958?autoplay=1&loop=1&background=1&quality=1080p" allowfullscreen></iframe>
+                <div class="video-overlay" style="background-color: rgba(0,0,0,0.45);"></div>
+            </div>
+
+        </div>
+    </section>
+
     <section>
         <div class="container clearfix">
             <div class="row">
-                <div class="col-12 col-sm-10 offset-sm-1 center">
+                <div class="col-12 col-sm-10 offset-sm-1 mt-4 center">
                     <h2 class="center font-weight-light">Welcome to the <span class="pacifico color">heart</span> of the Great Barrier Reef</h2>
                     <div class="center mt-4 mx-auto font-weight-light">Ni consequi sequam quunt id qui dolo bea sitas accae simus placesc ipsaesto quiae cum que nonseque rest fugit anti delest litiam voluptis nus sitia de molori aliqui sam, ullatintium volestia. Dunt eos et iducipic te aliquunt maximus pereped qui odio. Les pro dus excest, tem. Temossus remporecto</div>
                     <div class="accommodation-hero__social my-5 d-flex justify-content-center align-items-center">
@@ -73,20 +91,20 @@
     </section>
 
     <section class="position-relative">
-        <div class="shape-divider" data-shape="wave-4" data-position="top" data-height="100" id="shape-divider-6342"></div>
-        <div class="shape-divider" data-shape="wave-4" data-position="bottom" data-height="100" id="shape-divider-6343"></div>
+        <div class="shape-divider d-none d-md-block" data-shape="wave-4" data-position="top" data-height="80" id="shape-divider-6342"></div>
+        <div class="shape-divider d-none d-md-block" data-shape="wave-4" data-position="bottom" data-height="80" id="shape-divider-6343"></div>
         <iframe src="https://player.vimeo.com/video/94842405?title=0&byline=0&portrait=0" width="1280" height="720" allow="autoplay; fullscreen" allowfullscreen></iframe>
     </section>
 
     <section>
         <div class="container">
-            <div class="row col-mb-30 py-5 my-5">
-                <div class="row mx-0 px-0 col-12">
+            <div class="text-boxes-row row col-mb-30 py-4 my-4 py-lg-5 my-lg-5 justify-content-center">
+                <div class="row mx-0 px-0 col-12 col-lg-11">
                     <div class="col-12 col-sm-7 col-lg-8">
                         <h3 class="color font-weight-normal mb-2">SUB HEADLINE HERE</h3>
                         <p class="font-weight-light">Ni consequi sequam quunt id qui dolo bea sitas accae simus placesc ipsaesto quiae cum que nonseque rest fugit anti delest litiam voluptis nus sitia de molori aliqui sam, ullatintium volestiatque nonsed molore, ut ilitium earchil luptatisin non commodit at ma pro cus diti doluptas am, volore qui debit dolumqu atisquibus, Fuga. Ectem aut ipis erspide stiore volorer ciderovit ad quossec aboribus, eat ent. Natiunt, qui intinveri omnihil itatur a voluptat omnis ut rere id quiate esto tem fugitia nonsero restis dolupta eatur ab im fugiam quo</p>
                         <p class="font-weight-light">Lorem ipsum <strong><u>dolor</u></strong> sit amet, consectetur adipisicing elit. Aliquam corporis delectus quas temporibus. A architecto in maxime nemo nostrum sit.
-                            <a href="#" class="btn btn-outline-secondary text-uppercase px-1 py-0">
+                            <a href="#" class="btn btn-outline-secondary text-small text-uppercase px-1 py-0">
                                 <i class="icon-heart"></i>
                                 <span>History</span>
                                 <i class="icon-line-arrow-right"></i>
@@ -99,12 +117,12 @@
                         <img src="images/items/1.jpg" alt="item">
                     </div>
                 </div>
-                <div class="row mx-0 px-0 col-12 flex-row-reverse">
+                <div class="row mx-0 px-0 col-12 col-lg-11 flex-row-reverse">
                     <div class="col-12 col-sm-7 col-lg-8">
                         <h3 class="color font-weight-normal mb-2">SUB HEADLINE HERE</h3>
                         <p class="font-weight-light">Ni consequi sequam quunt id qui dolo bea sitas accae simus placesc ipsaesto quiae cum que nonseque rest fugit anti delest litiam voluptis nus sitia de molori aliqui sam, ullatintium volestiatque nonsed molore, ut ilitium earchil luptatisin non commodit at ma pro cus diti doluptas am, volore qui debit dolumqu atisquibus, Fuga. Ectem aut ipis erspide stiore volorer ciderovit ad quossec aboribus, eat ent. Natiunt, qui intinveri omnihil itatur a voluptat omnis ut rere id quiate esto tem fugitia nonsero restis dolupta eatur ab im fugiam quo</p>
                         <p class="font-weight-light">Lorem ipsum <strong><u>dolor</u></strong> sit amet, consectetur adipisicing elit. Aliquam corporis delectus quas temporibus. A architecto in maxime nemo nostrum sit.
-                            <a href="#" class="btn btn-outline-secondary text-uppercase px-1 py-0">
+                            <a href="#" class="btn btn-outline-secondary text-small text-uppercase px-1 py-0">
                                 <i class="icon-heart"></i>
                                 <span>History</span>
                                 <i class="icon-line-arrow-right"></i>
@@ -117,12 +135,12 @@
                         <img src="images/items/1.jpg" alt="item">
                     </div>
                 </div>
-                <div class="row mx-0 px-0 col-12">
+                <div class="row mx-0 px-0 col-12 col-lg-11">
                     <div class="col-12 col-sm-7 col-lg-8">
                         <h3 class="color font-weight-normal mb-2">SUB HEADLINE HERE</h3>
                         <p class="font-weight-light">Ni consequi sequam quunt id qui dolo bea sitas accae simus placesc ipsaesto quiae cum que nonseque rest fugit anti delest litiam voluptis nus sitia de molori aliqui sam, ullatintium volestiatque nonsed molore, ut ilitium earchil luptatisin non commodit at ma pro cus diti doluptas am, volore qui debit dolumqu atisquibus, Fuga. Ectem aut ipis erspide stiore volorer ciderovit ad quossec aboribus, eat ent. Natiunt, qui intinveri omnihil itatur a voluptat omnis ut rere id quiate esto tem fugitia nonsero restis dolupta eatur ab im fugiam quo</p>
                         <p class="font-weight-light">Lorem ipsum <strong><u>dolor</u></strong> sit amet, consectetur adipisicing elit. Aliquam corporis delectus quas temporibus. A architecto in maxime nemo nostrum sit.
-                            <a href="#" class="btn btn-outline-secondary text-uppercase px-1 py-0">
+                            <a href="#" class="btn btn-outline-secondary text-small text-uppercase px-1 py-0">
                                 <i class="icon-heart"></i>
                                 <span>History</span>
                                 <i class="icon-line-arrow-right"></i>
@@ -141,10 +159,10 @@
 
     <section>
         <section class="position-relative">
-            <div class="shape-divider" style="z-index: 11;" data-shape="wave-4" data-position="top" data-height="100" id="shape-divider-6344"></div>
-            <div class="shape-divider" style="z-index: 11;" data-shape="wave-4" data-position="bottom" data-height="100" id="shape-divider-6345"></div>
-            <div class="fslider bottommargin-sm" data-smooth-height="false" data-arrows="true" data-animation="fade" data-pagi="false">
-                <div class="flexslider max-vh-lg-75">
+            <div class="shape-divider d-none d-md-block" style="z-index: 11;" data-shape="wave-4" data-position="top" data-height="80" id="shape-divider-6344"></div>
+            <div class="shape-divider d-none d-md-block" style="z-index: 11;" data-shape="wave-4" data-position="bottom" data-height="80" id="shape-divider-6345"></div>
+            <div class="fslider bottommargin-sm" data-smooth-height="false" data-arrows="true" data-animation="fade" data-pagi="true">
+                <div class="flexslider max-vh-lg-80">
                     <div class="slider-wrap">
                         <div class="slide"><img src="images/wedding/11.jpg" alt="Image"></div>
                         <div class="slide"><img src="images/wedding/15.jpg" alt="Image"></div>
@@ -162,13 +180,13 @@
 
     <section>
         <div class="container">
-            <div class="row col-mb-30 py-5 my-5">
-                <div class="row mx-0 px-0 col-12">
+            <div class="text-boxes-row row col-mb-30 py-4 my-4 py-lg-5 my-lg-5 justify-content-center">
+                <div class="row mx-0 px-0 col-12 col-lg-11">
                     <div class="col-12 col-sm-7 col-lg-8">
                         <h3 class="color font-weight-normal mb-2">SUB HEADLINE HERE</h3>
                         <p class="font-weight-light">Ni consequi sequam quunt id qui dolo bea sitas accae simus placesc ipsaesto quiae cum que nonseque rest fugit anti delest litiam voluptis nus sitia de molori aliqui sam, ullatintium volestiatque nonsed molore, ut ilitium earchil luptatisin non commodit at ma pro cus diti doluptas am, volore qui debit dolumqu atisquibus, Fuga. Ectem aut ipis erspide stiore volorer ciderovit ad quossec aboribus, eat ent. Natiunt, qui intinveri omnihil itatur a voluptat omnis ut rere id quiate esto tem fugitia nonsero restis dolupta eatur ab im fugiam quo</p>
                         <p class="font-weight-light">Lorem ipsum <strong><u>dolor</u></strong> sit amet, consectetur adipisicing elit. Aliquam corporis delectus quas temporibus. A architecto in maxime nemo nostrum sit.
-                            <a href="#" class="btn btn-outline-secondary text-uppercase px-1 py-0">
+                            <a href="#" class="btn btn-outline-secondary text-small text-uppercase px-1 py-0">
                                 <i class="icon-heart"></i>
                                 <span>History</span>
                                 <i class="icon-line-arrow-right"></i>
@@ -181,12 +199,12 @@
                         <img src="images/items/1.jpg" alt="item">
                     </div>
                 </div>
-                <div class="row mx-0 px-0 col-12 flex-row-reverse">
+                <div class="row mx-0 px-0 col-12 col-lg-11 flex-row-reverse">
                     <div class="col-12 col-sm-7 col-lg-8">
                         <h3 class="color font-weight-normal mb-2">SUB HEADLINE HERE</h3>
                         <p class="font-weight-light">Ni consequi sequam quunt id qui dolo bea sitas accae simus placesc ipsaesto quiae cum que nonseque rest fugit anti delest litiam voluptis nus sitia de molori aliqui sam, ullatintium volestiatque nonsed molore, ut ilitium earchil luptatisin non commodit at ma pro cus diti doluptas am, volore qui debit dolumqu atisquibus, Fuga. Ectem aut ipis erspide stiore volorer ciderovit ad quossec aboribus, eat ent. Natiunt, qui intinveri omnihil itatur a voluptat omnis ut rere id quiate esto tem fugitia nonsero restis dolupta eatur ab im fugiam quo</p>
                         <p class="font-weight-light">Lorem ipsum <strong><u>dolor</u></strong> sit amet, consectetur adipisicing elit. Aliquam corporis delectus quas temporibus. A architecto in maxime nemo nostrum sit.
-                            <a href="#" class="btn btn-outline-secondary text-uppercase px-1 py-0">
+                            <a href="#" class="btn btn-outline-secondary text-small text-uppercase px-1 py-0">
                                 <i class="icon-heart"></i>
                                 <span>History</span>
                                 <i class="icon-line-arrow-right"></i>
@@ -198,6 +216,30 @@
                         <div class="shape-divider" data-shape="valley" data-position="bottom" data-height="40" data-flip="true" data-flip-vertical="true" data-fill="#FFF" id="shape-divider-738"></div>
                         <img src="images/items/1.jpg" alt="item">
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div id="tags" class="col-12 col-md-7 widget pb-5 clearfix">
+
+                    <h4 class="highlight-me">Tag Cloud</h4>
+                    <div class="tagcloud">
+                        <a href="#">general</a>
+                        <a href="#">videos</a>
+                        <a href="#">music</a>
+                        <a href="#">media</a>
+                        <a href="#">photography</a>
+                        <a href="#">parallax</a>
+                        <a href="#">ecommerce</a>
+                        <a href="#">terms</a>
+                        <a href="#">coupons</a>
+                        <a href="#">modern</a>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -208,12 +250,16 @@
         <div class="section m-0 position-relative" style="background: #40a48a">
             <div class="shape-divider" style="z-index: 11" data-shape="valley" data-position="top" data-height="80" data-flip="true" data-flip-vertical="true" data-fill="#FFF" id="shape-divider-7391"></div>
             <div class="container">
-                <h2 class="font-weight-light center text-white"><span class="pacifico nocolor">Scroll</span> and be delighted from every angle</h2>
+                <h2 class="title-down font-weight-light center text-white" data-animate="pulse"><span class="pacifico nocolor">Scroll</span> and be delighted from every angle</h2>
             </div>
         </div>
 
         <iframe src="https://player.vimeo.com/video/355120249?title=0&byline=0&portrait=0" width="1280" height="720" allow="autoplay; fullscreen; accelerometer; gyroscope;" allowfullscreen></iframe>
     </section>
+    
+    <sectiion>
+        <img src="images/content-placeholder.png" width="100%" alt="">
+    </sectiion>
 
     <section class="position-relative">
         <div class="shape-divider" style="z-index: 11" data-shape="valley" data-position="top" data-height="80" data-flip="true" data-flip-vertical="true" data-fill="#FFF" id="shape-divider-740"></div>
@@ -240,10 +286,16 @@
             <div class="container">
 
                 <div class="row">
-                    <div class="col-md-5">
-                        <div class="emphasis-title">
-                            <h2>Seriously Parallaxical</h2>
-                            <p class="lead topmargin-sm">Create beautiful unlimited full-screen parallax defined backgrounds to spell bound your visitors.</p>
+                    <div class="col-md-5 pl-md-5">
+                        <div class="content-parallax">
+                            <h2 class="color font-weight-light"><span class="pacifico">Seriously</span> parallaxical</h2>
+                            <p class="lead topmargin-sm">Create beautiful unlimited full-screen parallax defined backgrounds to spell bound your visitors.
+                                <a href="#" class="btn btn-outline-secondary text-small text-uppercase px-1 py-0">
+                                    <i class="icon-heart"></i>
+                                    <span>History</span>
+                                    <i class="icon-line-arrow-right"></i>
+                                </a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -253,19 +305,16 @@
     </div>
 
     <section class="position-relative">
+        <div class="shape-divider" style="z-index: 11" data-shape="valley" data-position="top" data-height="80" data-flip="true" data-flip-vertical="true" data-fill="#FFF" id="shape-divider-742"></div>
+        <div class="shape-divider" style="z-index: 11" data-shape="valley" data-position="bottom" data-height="80" data-flip="true" data-flip-vertical="true" data-fill="#FFF" id="shape-divider-743"></div>
         <div class="time-title time-title-top"><span class="pacifico">Beautiful</span> in the morning</div>
         <div class="time-title time-title-bottom"><span class="pacifico">Perfect</span> at night</div>
-        <div id="slider2" class="slider-element slider-parallax min-vh-100 slider-parallax-visible">
-            <div class="shape-divider" style="z-index: 11" data-shape="valley" data-position="top" data-height="80" data-flip="true" data-flip-vertical="true" data-fill="#FFF" id="shape-divider-742"></div>
-            <div class="shape-divider" style="z-index: 11" data-shape="valley" data-position="bottom" data-height="80" data-flip="true" data-flip-vertical="true" data-fill="#FFF" id="shape-divider-743"></div>
+        <div id="slider" class="slider-element slider-parallax min-vh-100 slider-parallax-visible">
             <div class="slider-inner" style="position: relative">
 
                 <div class="row align-items-stretch text-center dark w-100 h-100 mx-0 position-absolute">
 
                     <div class="col-6 px-0 dark videoplay-on-hover">
-                        <div class="vertical-middle text-center slider-element-fade">
-                            <h2 class="mb-0 ls1 font-body">different.</h2>
-                        </div>
                         <div class="video-wrap">
                             <video poster="images/videos/1.jpg" preload="auto" loop muted>
                                 <source src='images/videos/1.webm' type='video/webm' />
@@ -275,9 +324,6 @@
                         </div>
                     </div>
                     <div class="col-6 px-0 dark videoplay-on-hover">
-                        <div class="vertical-middle text-center slider-element-fade">
-                            <h2 class="mb-0 ls1 font-body">powerful.</h2>
-                        </div>
                         <div class="video-wrap">
                             <video poster="images/videos/3.jpg" preload="auto" loop muted>
                                 <source src='images/videos/3.webm' type='video/webm' />
@@ -287,9 +333,6 @@
                         </div>
                     </div>
                     <div class="col-6 px-0 dark videoplay-on-hover">
-                        <div class="vertical-middle text-center slider-element-fade">
-                            <h2 class="mb-0 ls1 font-body">different.</h2>
-                        </div>
                         <div class="video-wrap">
                             <video poster="images/videos/1.jpg" preload="auto" loop muted>
                                 <source src='images/videos/1.webm' type='video/webm' />
@@ -299,9 +342,6 @@
                         </div>
                     </div>
                     <div class="col-6 px-0 dark videoplay-on-hover">
-                        <div class="vertical-middle text-center slider-element-fade">
-                            <h2 class="mb-0 ls1 font-body">powerful.</h2>
-                        </div>
                         <div class="video-wrap">
                             <video poster="images/videos/3.jpg" preload="auto" loop muted>
                                 <source src='images/videos/3.webm' type='video/webm' />
@@ -321,23 +361,23 @@
         <div class="section position-relative pb-0 mb-0" style="background: #40a48a">
             <div class="shape-divider" style="z-index: 11" data-shape="valley" data-position="top" data-height="80" data-flip="true" data-flip-vertical="true" data-fill="#FFF" id="shape-divider-744"></div>
             <div class="shape-divider" style="z-index: 11" data-shape="valley" data-position="bottom" data-height="80" data-flip="true" data-flip-vertical="true" data-fill="#FFF" id="shape-divider-745"></div>
-            <div class="container">
+            <div class="container mt-4">
                 <h2 class="center font-weight-light text-white"><span class="pacifico nocolor">Choose</span> your pace</h2>
                 <div class="row">
                     <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 center text-white font-weight-light">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque odio quis voluptate? Aut commodi, delectus, deleniti deserunt distinctio ea eaque est ex facere hic iusto magni maxime porro quia.
                     </div>
-                    <div class="col-lg-9 mx-auto row d-none d-lg-flex text-white">
-                        <div class="col-5 d-flex">
+                    <div class="col-lg-9 mt-4 mx-auto row d-none d-lg-flex text-white">
+                        <div class="col-5 d-flex align-items-center">
                             <div class="pace-arrow pace-arrow-left mr-4">
                                 <i class="icon-angle-left"></i>
                             </div>
                             <div class="pacifico">slow</div>
                         </div>
                         <div class="col-2">
-                            <img src="images/logo-dark@2x.png" alt="">
+                            <img src="images/heart.svg" alt="">
                         </div>
-                        <div class="col-5 d-flex flex-row-reverse">
+                        <div class="col-5 d-flex flex-row-reverse align-items-center">
                             <div class="pace-arrow pace-arrow-right text-right ml-4">
                                 <i class="icon-angle-right"></i>
                             </div>
@@ -404,88 +444,90 @@
 
     <section class="section m-0 bg-transparent">
         <div class="container clearfix">
-            <div class="row justify-content-between">
-                <div class="col-12 col-lg-5">
-                    <h2 class="mb-5 pl-5"><span class="pacifico">slow</span> LIKE A TURTLE...</h2>
-                    <div class="d-flex mb-5">
-                        <i class="icon-lightbulb1 color" style="font-size: 25px"></i>
-                        <div class="column-text pl-5">
-                            <h3>#1 IDEA HEADLINE</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, incidunt.
-                                <a href="#" class="btn btn-outline-secondary text-uppercase px-1 py-0">
-                                    <i class="icon-heart"></i>
-                                    <span>History</span>
-                                    <i class="icon-line-arrow-right"></i>
-                                </a>
-                            </p>
+            <div class="row justify-content-center">
+                <div class="row col-12 col-md-10 justify-content-between">
+                    <div class="col-12 col-lg-6">
+                        <h2 class="mb-5 pl-5"><span class="pacifico">slow</span> LIKE A TURTLE...</h2>
+                        <div class="d-flex mb-5">
+                            <i class="icon-lightbulb1 color" style="font-size: 25px"></i>
+                            <div class="column-text pl-5">
+                                <h3>#1 IDEA HEADLINE</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, incidunt.
+                                    <a href="#" class="btn btn-outline-secondary text-small text-uppercase px-1 py-0">
+                                        <i class="icon-heart"></i>
+                                        <span>History</span>
+                                        <i class="icon-line-arrow-right"></i>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-5">
+                            <i class="icon-lightbulb1 color" style="font-size: 25px"></i>
+                            <div class="column-text pl-5">
+                                <h3>#1 IDEA HEADLINE</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, incidunt.
+                                    <a href="#" class="btn btn-outline-secondary text-small text-uppercase px-1 py-0">
+                                        <i class="icon-heart"></i>
+                                        <span>History</span>
+                                        <i class="icon-line-arrow-right"></i>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-5">
+                            <i class="icon-lightbulb1 color" style="font-size: 25px"></i>
+                            <div class="column-text pl-5">
+                                <h3>#1 IDEA HEADLINE</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, incidunt.
+                                    <a href="#" class="btn btn-outline-secondary text-small text-uppercase px-1 py-0">
+                                        <i class="icon-heart"></i>
+                                        <span>History</span>
+                                        <i class="icon-line-arrow-right"></i>
+                                    </a>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="d-flex mb-5">
-                        <i class="icon-lightbulb1 color" style="font-size: 25px"></i>
-                        <div class="column-text pl-5">
-                            <h3>#1 IDEA HEADLINE</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, incidunt.
-                                <a href="#" class="btn btn-outline-secondary text-uppercase px-1 py-0">
-                                    <i class="icon-heart"></i>
-                                    <span>History</span>
-                                    <i class="icon-line-arrow-right"></i>
-                                </a>
-                            </p>
+                    <div class="col-12 col-lg-6">
+                        <h2 class="mb-5 pl-5"><span class="pacifico">fast</span> LIKE A DOLPHIN...</h2>
+                        <div class="d-flex mb-5">
+                            <i class="icon-lightbulb1 color" style="font-size: 25px"></i>
+                            <div class="column-text pl-5">
+                                <h3>#1 IDEA HEADLINE</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, incidunt.
+                                    <a href="#" class="btn btn-outline-secondary text-small text-uppercase px-1 py-0">
+                                        <i class="icon-heart"></i>
+                                        <span>History</span>
+                                        <i class="icon-line-arrow-right"></i>
+                                    </a>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="d-flex mb-5">
-                        <i class="icon-lightbulb1 color" style="font-size: 25px"></i>
-                        <div class="column-text pl-5">
-                            <h3>#1 IDEA HEADLINE</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, incidunt.
-                                <a href="#" class="btn btn-outline-secondary text-uppercase px-1 py-0">
-                                    <i class="icon-heart"></i>
-                                    <span>History</span>
-                                    <i class="icon-line-arrow-right"></i>
-                                </a>
-                            </p>
+                        <div class="d-flex mb-5">
+                            <i class="icon-lightbulb1 color" style="font-size: 25px"></i>
+                            <div class="column-text pl-5">
+                                <h3>#1 IDEA HEADLINE</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, incidunt.
+                                    <a href="#" class="btn btn-outline-secondary text-small text-uppercase px-1 py-0">
+                                        <i class="icon-heart"></i>
+                                        <span>History</span>
+                                        <i class="icon-line-arrow-right"></i>
+                                    </a>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-5">
-                    <h2 class="mb-5 pl-5"><span class="pacifico">fast</span> LIKE A DOLPHIN...</h2>
-                    <div class="d-flex mb-5">
-                        <i class="icon-lightbulb1 color" style="font-size: 25px"></i>
-                        <div class="column-text pl-5">
-                            <h3>#1 IDEA HEADLINE</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, incidunt.
-                                <a href="#" class="btn btn-outline-secondary text-uppercase px-1 py-0">
-                                    <i class="icon-heart"></i>
-                                    <span>History</span>
-                                    <i class="icon-line-arrow-right"></i>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="d-flex mb-5">
-                        <i class="icon-lightbulb1 color" style="font-size: 25px"></i>
-                        <div class="column-text pl-5">
-                            <h3>#1 IDEA HEADLINE</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, incidunt.
-                                <a href="#" class="btn btn-outline-secondary text-uppercase px-1 py-0">
-                                    <i class="icon-heart"></i>
-                                    <span>History</span>
-                                    <i class="icon-line-arrow-right"></i>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="d-flex mb-5">
-                        <i class="icon-lightbulb1 color" style="font-size: 25px"></i>
-                        <div class="column-text pl-5">
-                            <h3>#1 IDEA HEADLINE</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, incidunt.
-                                <a href="#" class="btn btn-outline-secondary text-uppercase px-1 py-0">
-                                    <i class="icon-heart"></i>
-                                    <span>History</span>
-                                    <i class="icon-line-arrow-right"></i>
-                                </a>
-                            </p>
+                        <div class="d-flex mb-5">
+                            <i class="icon-lightbulb1 color" style="font-size: 25px"></i>
+                            <div class="column-text pl-5">
+                                <h3>#1 IDEA HEADLINE</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, incidunt.
+                                    <a href="#" class="btn btn-outline-secondary text-small text-uppercase px-1 py-0">
+                                        <i class="icon-heart"></i>
+                                        <span>History</span>
+                                        <i class="icon-line-arrow-right"></i>
+                                    </a>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -498,7 +540,7 @@
             <div class="container">
 
                 <div class="row align-items-center gutter-40 col-mb-50">
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-animate="slideInLeft">
                         <iframe src="https://player.vimeo.com/video/243244233?title=0&byline=0&portrait=0" width="640" height="360" allow="autoplay; fullscreen" allowfullscreen></iframe>
                     </div>
 
@@ -520,7 +562,7 @@
             <div class="container">
 
                 <div class="row align-items-center gutter-40 col-mb-50 flex-row-reverse">
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-animate="slideInRight">
                         <iframe src="https://player.vimeo.com/video/243244233?title=0&byline=0&portrait=0" width="640" height="360" allow="autoplay; fullscreen" allowfullscreen></iframe>
                     </div>
 
@@ -542,7 +584,7 @@
             <div class="container">
 
                 <div class="row align-items-center gutter-40 col-mb-50">
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-animate="slideInLeft">
                         <iframe src="https://player.vimeo.com/video/243244233?title=0&byline=0&portrait=0" width="640" height="360" allow="autoplay; fullscreen" allowfullscreen></iframe>
                     </div>
 
@@ -599,86 +641,88 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque odio quis voluptate? Aut commodi, delectus, deleniti deserunt distinctio ea eaque est ex facere hic iusto magni maxime porro quia.
                 </div>
             </div>
-            <div class="row justify-content-between">
-                <div class="col-12 col-lg-5">
-                    <div class="d-flex mb-5">
-                        <i class="icon-lightbulb1 color" style="font-size: 25px"></i>
-                        <div class="column-text pl-5">
-                            <h3>#1 IDEA HEADLINE</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, incidunt.
-                                <a href="#" class="btn btn-outline-secondary text-uppercase px-1 py-0">
-                                    <i class="icon-heart"></i>
-                                    <span>History</span>
-                                    <i class="icon-line-arrow-right"></i>
-                                </a>
-                            </p>
+            <div class="row justify-content-center">
+                <div class="row col-12 col-md-10 justify-content-between">
+                    <div class="col-12 col-lg-6">
+                        <div class="d-flex mb-5">
+                            <i class="icon-lightbulb1 color" style="font-size: 25px"></i>
+                            <div class="column-text pl-5">
+                                <h3>#1 IDEA HEADLINE</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, incidunt.
+                                    <a href="#" class="btn btn-outline-secondary text-small text-uppercase px-1 py-0">
+                                        <i class="icon-heart"></i>
+                                        <span>History</span>
+                                        <i class="icon-line-arrow-right"></i>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-5">
+                            <i class="icon-lightbulb1 color" style="font-size: 25px"></i>
+                            <div class="column-text pl-5">
+                                <h3>#1 IDEA HEADLINE</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, incidunt.
+                                    <a href="#" class="btn btn-outline-secondary text-small text-uppercase px-1 py-0">
+                                        <i class="icon-heart"></i>
+                                        <span>History</span>
+                                        <i class="icon-line-arrow-right"></i>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-5">
+                            <i class="icon-lightbulb1 color" style="font-size: 25px"></i>
+                            <div class="column-text pl-5">
+                                <h3>#1 IDEA HEADLINE</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, incidunt.
+                                    <a href="#" class="btn btn-outline-secondary text-small text-uppercase px-1 py-0">
+                                        <i class="icon-heart"></i>
+                                        <span>History</span>
+                                        <i class="icon-line-arrow-right"></i>
+                                    </a>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="d-flex mb-5">
-                        <i class="icon-lightbulb1 color" style="font-size: 25px"></i>
-                        <div class="column-text pl-5">
-                            <h3>#1 IDEA HEADLINE</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, incidunt.
-                                <a href="#" class="btn btn-outline-secondary text-uppercase px-1 py-0">
-                                    <i class="icon-heart"></i>
-                                    <span>History</span>
-                                    <i class="icon-line-arrow-right"></i>
-                                </a>
-                            </p>
+                    <div class="col-12 col-lg-6">
+                        <div class="d-flex mb-5">
+                            <i class="icon-lightbulb1 color" style="font-size: 25px"></i>
+                            <div class="column-text pl-5">
+                                <h3>#1 IDEA HEADLINE</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, incidunt.
+                                    <a href="#" class="btn btn-outline-secondary text-small text-uppercase px-1 py-0">
+                                        <i class="icon-heart"></i>
+                                        <span>History</span>
+                                        <i class="icon-line-arrow-right"></i>
+                                    </a>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="d-flex mb-5">
-                        <i class="icon-lightbulb1 color" style="font-size: 25px"></i>
-                        <div class="column-text pl-5">
-                            <h3>#1 IDEA HEADLINE</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, incidunt.
-                                <a href="#" class="btn btn-outline-secondary text-uppercase px-1 py-0">
-                                    <i class="icon-heart"></i>
-                                    <span>History</span>
-                                    <i class="icon-line-arrow-right"></i>
-                                </a>
-                            </p>
+                        <div class="d-flex mb-5">
+                            <i class="icon-lightbulb1 color" style="font-size: 25px"></i>
+                            <div class="column-text pl-5">
+                                <h3>#1 IDEA HEADLINE</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, incidunt.
+                                    <a href="#" class="btn btn-outline-secondary text-small text-uppercase px-1 py-0">
+                                        <i class="icon-heart"></i>
+                                        <span>History</span>
+                                        <i class="icon-line-arrow-right"></i>
+                                    </a>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-5">
-                    <div class="d-flex mb-5">
-                        <i class="icon-lightbulb1 color" style="font-size: 25px"></i>
-                        <div class="column-text pl-5">
-                            <h3>#1 IDEA HEADLINE</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, incidunt.
-                                <a href="#" class="btn btn-outline-secondary text-uppercase px-1 py-0">
-                                    <i class="icon-heart"></i>
-                                    <span>History</span>
-                                    <i class="icon-line-arrow-right"></i>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="d-flex mb-5">
-                        <i class="icon-lightbulb1 color" style="font-size: 25px"></i>
-                        <div class="column-text pl-5">
-                            <h3>#1 IDEA HEADLINE</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, incidunt.
-                                <a href="#" class="btn btn-outline-secondary text-uppercase px-1 py-0">
-                                    <i class="icon-heart"></i>
-                                    <span>History</span>
-                                    <i class="icon-line-arrow-right"></i>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="d-flex mb-5">
-                        <i class="icon-lightbulb1 color" style="font-size: 25px"></i>
-                        <div class="column-text pl-5">
-                            <h3>#1 IDEA HEADLINE</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, incidunt.
-                                <a href="#" class="btn btn-outline-secondary text-uppercase px-1 py-0">
-                                    <i class="icon-heart"></i>
-                                    <span>History</span>
-                                    <i class="icon-line-arrow-right"></i>
-                                </a>
-                            </p>
+                        <div class="d-flex mb-5">
+                            <i class="icon-lightbulb1 color" style="font-size: 25px"></i>
+                            <div class="column-text pl-5">
+                                <h3>#1 IDEA HEADLINE</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, incidunt.
+                                    <a href="#" class="btn btn-outline-secondary text-small text-uppercase px-1 py-0">
+                                        <i class="icon-heart"></i>
+                                        <span>History</span>
+                                        <i class="icon-line-arrow-right"></i>
+                                    </a>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -696,7 +740,8 @@
         <div id="google-map" style="height: 75vh;" data-latitude="-20.3917753" data-longitude="148.7816005" data-zoom="10" data-scrollwheel="false" data-control-zoom="true" data-control-streetview="true" data-styles='[{"featureType":"all","elementType":"geometry","stylers":[{"color":"#ebe3cd"}]},{"featureType":"all","elementType":"labels.text.fill","stylers":[{"color":"#523735"}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"color":"#f5f1e6"}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#c9b2a6"}]},{"featureType":"administrative.land_parcel","elementType":"geometry.stroke","stylers":[{"color":"#dcd2be"}]},{"featureType":"administrative.land_parcel","elementType":"labels.text.fill","stylers":[{"color":"#ae9e90"}]},{"featureType":"landscape.natural","elementType":"geometry","stylers":[{"color":"#dfd2ae"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#dfd2ae"}]},{"featureType":"poi","elementType":"labels.text.fill","stylers":[{"color":"#93817c"}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"color":"#a5b076"}]},{"featureType":"poi.park","elementType":"labels.text.fill","stylers":[{"color":"#447530"}]},{"featureType":"road","elementType":"geometry","stylers":[{"color":"#f5f1e6"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#e498d0"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#e9bc62"}]},{"featureType":"road.highway.controlled_access","elementType":"geometry","stylers":[{"color":"#e498d0"}]},{"featureType":"road.highway.controlled_access","elementType":"geometry.stroke","stylers":[{"color":"#db8555"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#fdfcf8"}]},{"featureType":"road.local","elementType":"labels.text.fill","stylers":[{"color":"#806b63"}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"color":"#dfd2ae"}]},{"featureType":"transit.line","elementType":"labels.text.fill","stylers":[{"color":"#8f7d77"}]},{"featureType":"transit.line","elementType":"labels.text.stroke","stylers":[{"color":"#ebe3cd"}]},{"featureType":"transit.station","elementType":"geometry","stylers":[{"color":"#dfd2ae"}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#a5d7bb"}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"color":"#92998d"}]}]' class="gmap"></div>
     </section>
 
-    <section>
+    <section class="position-relative">
+        <div class="shape-divider" style="z-index: 11" data-shape="valley" data-position="bottom" data-height="60" data-flip="true" data-flip-vertical="true" data-fill="#FFF" id="shape-divider-7394"></div>
         <div class="section m-0 position-relative" style="background: #40a48a;">
             <div class="shape-divider" style="z-index: 11" data-shape="valley" data-position="top" data-height="80" data-flip="true" data-flip-vertical="true" data-fill="#FFF" id="shape-divider-7393"></div>
             <div class="container">
@@ -726,7 +771,7 @@
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="flip-card text-center">
-                        <div class="flip-card-front dark" style="background-image: url('images/featured/1.jpg')">
+                        <div class="flip-card-front dark" style="background-image: url('images/giphy.gif')">
                             <div class="flip-card-inner">
                                 <div class="card bg-transparent border-0 text-center">
                                     <div class="card-body">
@@ -762,7 +807,81 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="flip-card text-center">
+                        <div class="flip-card-front dark" style="background-image: url('images/featured/1.jpg')">
+                            <div class="flip-card-inner">
+                                <div class="card bg-transparent border-0 text-center">
+                                    <div class="card-body">
+                                        <h3 class="card-title pacifico">Dry</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back bg-danger no-after">
+                            <div class="flip-card-inner">
+                                <p class="mb-2 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit.</p>
+                                <button type="button" class="btn btn-outline-light mt-2">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="flip-card text-center">
+                        <div class="flip-card-front dark" style="background-image: url('images/featured/1.jpg')">
+                            <div class="flip-card-inner">
+                                <div class="card bg-transparent border-0 text-center">
+                                    <div class="card-body">
+                                        <h3 class="card-title pacifico">Cold</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back bg-danger no-after">
+                            <div class="flip-card-inner">
+                                <p class="mb-2 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit.</p>
+                                <button type="button" class="btn btn-outline-light mt-2">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="flip-card text-center">
+                        <div class="flip-card-front dark" style="background-image: url('images/giphy.gif')">
+                            <div class="flip-card-inner">
+                                <div class="card bg-transparent border-0 text-center">
+                                    <div class="card-body">
+                                        <h3 class="card-title pacifico">Low</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back bg-danger no-after">
+                            <div class="flip-card-inner">
+                                <p class="mb-2 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit.</p>
+                                <button type="button" class="btn btn-outline-light mt-2">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <section id="slider" class="slider-element video-bg min-vh-100 dark">
+        <div class="slider-inner">
+
+            <div class="container">
+                <div class="slider-caption slider-caption-center">
+                    <h2 data-animate="fadeInUp">Welcome to Canvas</h2>
+                </div>
+            </div>
+
+            <div class="video-wrap" style="z-index: 1;">
+                <iframe class="no-fv" src="https://player.vimeo.com/video/112836958?autoplay=1&loop=1&background=1&quality=1080p" allowfullscreen></iframe>
+                <div class="video-overlay" style="background-color: rgba(0,0,0,0.45);"></div>
+            </div>
+
         </div>
     </section>
 

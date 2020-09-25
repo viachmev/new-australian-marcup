@@ -48,7 +48,7 @@ $content-padding:						80px; // Top and Bottom 80px
 // Heper Classes Values
 $pos_align-classes:    					left, right, top, bottom; // Set False for Disabled
 $positions:								static, relative, absolute, fixed, sticky; // Set False for Disabled
-$vh-elements: 							100, 75, 60, 50, 40, 25, 0; // Set False for Disabled
+$vh-elements: 							100, 80, 75, 60, 50, 40, 25, 0; // Set False for Disabled
 $letter-spacing:						5; //ls-* value Until
 $op-classes:							9; //op-* value Until 0 - 1
 
@@ -822,11 +822,11 @@ $sm-form-focus-color:					darken($body-bg, 33.33);
 $sm-form-placeholder:					darken($body-bg, 40);
 
 $sm-form-label-color:					$sm-form-color;
-$sm-form-label-size:					$sm-form-font-size - 2px;
+$sm-form-label-size:					$sm-form-font-size - 1px;
 $sm-form-label-font:					$heading-font;
 $sm-form-label-transform:				uppercase;
 $sm-form-label-spacing:					1px;
-$sm-form-label-weight:					700;
+$sm-form-label-weight:					500;
 $sm-form-label-mb:						10px;
 
 $sm-form-label-error:					#E42C3E;
