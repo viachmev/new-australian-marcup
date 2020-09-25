@@ -495,3 +495,37 @@
 .form-check-label {
   text-transform: none;
 }
+
+// travel guide
+
+.toggle {
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #EEE;
+}
+
+.toggle-header {
+  align-items: center;
+}
+
+.toggle-header .toggle-open {
+  display: block !important;
+  font-size: 20px;
+  line-height: 1;
+  height: 20px;
+  transform: rotate(45deg);
+  transition: transform .3s ease;
+}
+
+.toggle-closed { display: none !important; }
+
+.toggle-active .toggle-open {
+  display: block !important;
+  transform: rotate(90deg);
+  color: $theme-color;
+}
+
+.tab-container,
+.tabs-bb .tab-nav {
+  padding: 0 15px;
+}
