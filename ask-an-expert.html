@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-icons.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/bs-rating.css">
+    <link rel="stylesheet" href="dist/style.css">
+    <title>Travel Guide</title>
+</head>
+<body>
+<main class="include-header">
+    <section class="accommodation-hero">
+        <div class="accommodation-hero__top position-relative parallax" style="background-position: center center; background-repeat: no-repeat; background-size: cover; background-image: url(https://source.unsplash.com/mEUw1mRqqPs/1920x1080);">
+            <div class="container clearfix">
+                <h1 class="center">OUR TRAVEL CONCEIRGE</h1>
+            </div>
+            <div class="shape-divider" data-shape="wave-4" data-position="bottom" data-height="100" id="shape-divider-6341"></div>
+        </div>
+        <div class="container clearfix">
+            <div class="row">
+                <div class="col-12 col-sm-10 offset-sm-1 center mt-5">
+                    <h2 class="center text-uppercase">SIT BACK AND RELAX AND LET US TAKE CARE OF YOUR HOLIDAY</h2>
+                    <div class="center mt-4 mx-auto">It’s hard and time consuming to plan and book a holiday, especially to a country you’ve never been before, let alone for
+                        some, on the other side of the world. It should be fun and that’s why we’ve built a travel business around good ‘ol fashion
+                        friendly service. In today’s tech world, its common to talk to a bot or even someone not in the country. Not here. Our
+
+                        dedicated team of Travel Experts, live and breathe in Australia and you’ll be glad to know they’re on hand to help you at every
+
+                        step of the way</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section my-0 bg-transparent">
+        <div class="container">
+            <div class="row justify-content-center">
+                <form class="mt-5 col-12 col-lg-10">
+                    <div class="form-row mb-5">
+                        <div class="form-group col-md-6">
+                            <label for="name">First name *</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="surname">Last name *</label>
+                            <input type="text" class="form-control" id="surname">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="email">Email *</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="mobile">Mobile *</label>
+                            <input type="tel" class="form-control" id="mobile">
+                        </div>
+                    </div>
+                    <div class="form-row mb-5">
+                        <div class="form-group col-md-6">
+                            <label for="countryOrigin">Country of origin</label>
+                            <select id="countryOrigin" class="form-control">
+                                <option selected>Australia</option>
+                                <option value="1" >Germany</option>
+                                <option value="2">Italy</option>
+                                <option value="3">France</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="city">City *</label>
+                            <input type="text" class="form-control" id="city">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="travellers">Number of travelers *</label>
+                            <select id="travellers" class="form-control">
+                                <option value="1" selected>1</option>
+                                <option value="2" >2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="arrivalDate">Arrival date *</label>
+                            <input type="date" class="form-control" id="arrivalDate">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="nights">Number of nights *</label>
+                            <select id="nights" class="form-control">
+                                <option value="1" selected>1 Night</option>
+                                <option value="2">2 Night</option>
+                                <option value="3">3 Night</option>
+                                <option value="4">4 Night</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="isFlexible">
+                                <label class="form-check-label" for="isFlexible">
+                                    Dates flexible?
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row mb-5">
+                        <div class="form-group col-12">
+                            <label for="stageOfBookings">Stage of bookings *</label>
+                            <select id="stageOfBookings" class="form-control">
+                                <option value="1" selected>I am definitely coming and I have booked my flights</option>
+                                <option value="2">I am coming but not yet booked my flights</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="travelBudget">Travel budget for the entire holiday *</label>
+                            <select id="travelBudget" class="form-control">
+                                <option value="1" selected>1000 to 3000</option>
+                                <option value="2">3000 to 6000</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="preferredStandard">Travel budget for the entire holiday *</label>
+                            <select id="preferredStandard" class="form-control">
+                                <option value="1" selected>Clean and Comfortable 3 star</option>
+                                <option value="2">Premium 4 star</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row mb-5">
+                        <label class="col-md-12 mb-4">My interests and passions *</label>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="interest1">
+                                    <label class="form-check-label" for="interest1">
+                                        Adventure and Outdoors
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="interest2">
+                                    <label class="form-check-label" for="interest2">
+                                        Sites and Scenery
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="interest3">
+                                    <label class="form-check-label" for="interest3">
+                                        Family Holidays
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="interest4">
+                                    <label class="form-check-label" for="interest4">
+                                        Wildlife and Wilderness
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="interest5">
+                                    <label class="form-check-label" for="interest5">
+                                        Icons and Scenery
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="interest6">
+                                    <label class="form-check-label" for="interest6">
+                                        Food and Wine
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="interest7">
+                                    <label class="form-check-label" for="interest7">
+                                        Honeymoon and Romance
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="interest8">
+                                    <label class="form-check-label" for="interest8">
+                                        Outback
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="interest9">
+                                    <label class="form-check-label" for="interest9">
+                                        Reefs and Beaches
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="interest10">
+                                    <label class="form-check-label" for="interest10">
+                                        History and Heritage
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="interest11">
+                                    <label class="form-check-label" for="interest11">
+                                        Sightseeing Tours
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="interest12">
+                                    <label class="form-check-label" for="interest12">
+                                        Shopping and Leisure
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row mb-5">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="additionalInfo">Additional information that will help you package up my ideal holiday *</label>
+                                <textarea class="form-control" id="additionalInfo" rows="4"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div>By submitting this enquiry, I agree to Australia.com's Privacy Policy and to receive email for travel deals, special offers and other Australian.com news.</div>
+                    <button type="submit" class="d-block button button-large button-rounded px-5 mt-5 mx-auto">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-transparent">
+        <div class="container">
+            <h2 class="center color font-weight-normal">HOW WE WORK</h2>
+            <div class="center mt-5">Our friendly Aussie Team is here for you all the way. This is our home and we’ve explored every inch, and looked under every stone to bring you the very best Aussie experiences available.</div>
+            <div class="row mt-5 center clearfix">
+                <div class="section-contact col-lg-3 col-md-6 bottommargin">
+                    <div class="p-5 border h-100">
+                        <i class="i-plain i-large mx-auto mb-4 icon-line-eye color font-weight-bold"></i>
+                        <h3 class="mb-2 text-uppercase">Step 1</h3>
+                        <span>Explore our unique and exciting Packages recommended by our home-grown Travel Designers or design your own.</span>
+                    </div>
+                </div>
+
+                <div class="section-contact col-lg-3 col-md-6 bottommargin">
+                    <div class="p-5 border h-100">
+                        <i class="i-plain i-large mx-auto mb-4 icon-line2-doc color font-weight-bold"></i>
+                        <h3 class="mb-2 text-uppercase">Step 2</h3>
+                        <span>Send us your details via our forms and our team snaps into action customising any tour just for you.</span>
+                    </div>
+                </div>
+
+                <div class="section-contact col-lg-3 col-md-6 bottommargin">
+                    <div class="p-5 border h-100">
+                        <i class="i-plain i-large mx-auto mb-4 icon-line-check-circle color font-weight-bold"></i>
+                        <h3 class="mb-2 text-uppercase">Step 3</h3>
+                        <span>When you're happy and ready, we book everything and you can relax and enjoy the anticipation with our full pre-trip support.</span>
+                    </div>
+                </div>
+
+                <div class="section-contact col-lg-3 col-md-6 bottommargin">
+                    <div class="p-5 border h-100">
+                        <i class="i-plain i-large mx-auto mb-4 icon-line2-map color font-weight-bold"></i>
+                        <h3 class="mb-2 text-uppercase">Step 4</h3>
+                        <span>With every detail attended to, explore Australia and experience your tailor-made trip with access to on-the-ground support.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- JavaScripts
+============================================= -->
+<script src="js/jquery.js"></script>
+<script src="js/plugins.min.js"></script>
+<script src="js/components/star-rating.js"></script>
+<!-- Footer Scripts
+============================================= -->
+<script src="js/functions.js"></script>
+</body>
+</html>
