@@ -822,11 +822,11 @@ $sm-form-focus-color:					darken($body-bg, 33.33);
 $sm-form-placeholder:					darken($body-bg, 40);
 
 $sm-form-label-color:					$sm-form-color;
-$sm-form-label-size:					$sm-form-font-size - 2px;
+$sm-form-label-size:					$sm-form-font-size - 1px;
 $sm-form-label-font:					$heading-font;
 $sm-form-label-transform:				uppercase;
 $sm-form-label-spacing:					1px;
-$sm-form-label-weight:					700;
+$sm-form-label-weight:					500;
 $sm-form-label-mb:						10px;
 
 $sm-form-label-error:					#E42C3E;
