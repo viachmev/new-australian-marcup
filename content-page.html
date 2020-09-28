@@ -312,41 +312,29 @@
         <div id="slider" class="slider-element slider-parallax min-vh-100 slider-parallax-visible">
             <div class="slider-inner" style="position: relative">
 
-                <div class="row align-items-stretch text-center dark w-100 h-100 mx-0 position-absolute">
+                <div class="video-bg row align-items-stretch text-center dark w-100 h-100 mx-0 position-absolute">
 
                     <div class="col-6 px-0 dark videoplay-on-hover">
                         <div class="video-wrap">
-                            <video poster="images/videos/1.jpg" preload="auto" loop muted>
-                                <source src='images/videos/1.webm' type='video/webm' />
-                                <source src='images/videos/1.mp4' type='video/mp4' />
-                            </video>
+                            <iframe class="no-fv" src="https://player.vimeo.com/video/112836958?autoplay=0&loop=1&background=1&quality=1080p" allowfullscreen></iframe>
                             <div class="video-overlay" style="background-color: rgba(0,0,0,0.2);"></div>
                         </div>
                     </div>
                     <div class="col-6 px-0 dark videoplay-on-hover">
                         <div class="video-wrap">
-                            <video poster="images/videos/3.jpg" preload="auto" loop muted>
-                                <source src='images/videos/3.webm' type='video/webm' />
-                                <source src='images/videos/3.mp4' type='video/mp4' />
-                            </video>
+                            <iframe class="no-fv" src="https://player.vimeo.com/video/182932029?autoplay=0&loop=1&background=1&quality=1080p" allowfullscreen></iframe>
                             <div class="video-overlay" style="background-color: rgba(0,0,0,0.3);"></div>
                         </div>
                     </div>
                     <div class="col-6 px-0 dark videoplay-on-hover">
                         <div class="video-wrap">
-                            <video poster="images/videos/1.jpg" preload="auto" loop muted>
-                                <source src='images/videos/1.webm' type='video/webm' />
-                                <source src='images/videos/1.mp4' type='video/mp4' />
-                            </video>
+                            <iframe class="no-fv" src="https://player.vimeo.com/video/112836958?autoplay=0&loop=1&background=1&quality=1080p" allowfullscreen></iframe>
                             <div class="video-overlay" style="background-color: rgba(0,0,0,0.2);"></div>
                         </div>
                     </div>
                     <div class="col-6 px-0 dark videoplay-on-hover">
                         <div class="video-wrap">
-                            <video poster="images/videos/3.jpg" preload="auto" loop muted>
-                                <source src='images/videos/3.webm' type='video/webm' />
-                                <source src='images/videos/3.mp4' type='video/mp4' />
-                            </video>
+                            <iframe class="no-fv" src="https://player.vimeo.com/video/103136931?autoplay=0&loop=1&background=1&quality=1080p" allowfullscreen></iframe>
                             <div class="video-overlay" style="background-color: rgba(0,0,0,0.3);"></div>
                         </div>
                     </div>
@@ -891,19 +879,21 @@
 
     <script src="https://maps.google.com/maps/api/js?key=AIzaSyCMQS1dhBpa9m3OKsmtIJrydCUSF2RYbck"></script>
 
+    <script src="https://player.vimeo.com/api/player.js"></script>
+
     <script src="js/functions.js"></script>
 
     <script>
 
       jQuery(document).ready(function($){
         $('.videoplay-on-hover').hover( function(){
-          if( $(this).find('video').length > 0 ) {
-            $(this).find('video').get(0).play();
-          }
+          let player = new Vimeo.Player($(this).find('iframe'));
+          player.play();
         }, function(){
-          if( $(this).find('video').length > 0 ) {
-            $(this).find('video').get(0).pause();
-          }
+          $('.videoplay-on-hover iframe').each(function (index, value) {
+            let player = new Vimeo.Player(value);
+            player.pause();
+          })
         });
       });
 
