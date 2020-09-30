@@ -30,14 +30,12 @@
       }
     }
   }
+}
 
-  &__social {
-    .soc-line {
-      width: 100%;
-      height: 2px;
-      background: $theme-gold;
-    }
-  }
+.soc-line {
+  width: 100%;
+  height: 2px;
+  background: $theme-gold;
 }
 
 .accommodation-bonuses {
