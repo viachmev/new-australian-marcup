@@ -16,10 +16,11 @@
       z-index: -1;
     }
 
-    h1 {
+    h1, .h1 {
       font-size: 48px;
       line-height: 1;
       color: white;
+      text-align: center;
 
       @include media-breakpoint-up(md) {
         font-size: 100px;
