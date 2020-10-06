@@ -15,6 +15,7 @@
   justify-content: space-between;
   text-align: justify;
   flex-wrap: wrap;
+  line-height: 1.7;
 
   .left {
     width: 100%;
@@ -79,6 +80,7 @@
 .text-narrow {
   max-width: 340px;
   margin: 0 auto;
+  line-height: 1.7;
 
   blockquote {
     position: relative;
@@ -109,8 +111,14 @@
 
 .article-slider {
   .slider-caption {
-    max-width: 350px;
+    max-width: 400px;
+    padding: 50px 0;
+    width: 100%;
     color: $white;
+
+    @media (max-width: 1440px) {
+      max-width: 500px;
+    }
 
     h3 {
       color: $white;
@@ -127,7 +135,7 @@
       }
 
       @include media-breakpoint-up(md) {
-        line-height: 1.7;
+        line-height: 1.9;
       }
     }
   }
@@ -139,6 +147,7 @@
   justify-content: space-between;
   text-align: justify;
   flex-wrap: wrap;
+  line-height: 1.7;
 
   .left {
     width: 100%;
@@ -179,7 +188,7 @@
     @include media-breakpoint-up(md) {
       left: 50%;
       top: 50%;
-      transform: translate(-50%, -15%);
+      transform: translate(-50%, -10%);
     }
     @include media-breakpoint-up(lg) {
       left: 50%;
@@ -201,7 +210,7 @@
       position: absolute;
       left: 50%;
       top: 50%;
-      transform: translate(-50%, -15%);
+      transform: translate(-50%, -10%);
       width: 375px;
     }
 
@@ -216,6 +225,7 @@
 }
 
 .grid-column {
+  line-height: 1.7;
 
   .middle {
     position: relative;
@@ -302,4 +312,12 @@
   @include media-breakpoint-up(lg) {
     margin-top: 80px;
   }
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-noto {
+  font-family: 'Noto Serif KR', serif;
 }

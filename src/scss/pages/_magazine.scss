@@ -114,6 +114,46 @@
   }
 }
 
+.magazine-carousel {
+  cursor: grab;
+  .owl-stage-outer {
+    overflow: visible;
+  }
+
+  .owl-nav {
+    display: block;
+
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+  }
+
+  h2 {
+    font-size: 32px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 42px;
+    }
+  }
+
+  .portfolio-image {
+    height: 400px;
+
+    @include media-breakpoint-up(xl) {
+      height: 480px;
+    }
+
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .bg-overlay-bg.dark {
+    background: linear-gradient(to bottom, transparent 0%, rgba($black, 0.75) 100%);
+  }
+}
+
 .bg-black {
   background-color: $black;
 }
