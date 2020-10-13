@@ -322,6 +322,26 @@
   }
 }
 
+.content-img-left {
+  height: max-content;
+  float: left;
+  max-width: 350px;
+
+  @include media-breakpoint-up(md) {
+    margin-right: 20px;
+  }
+}
+
+.content-img-right {
+  height: max-content;
+  float: right;
+  max-width: 350px;
+
+  @include media-breakpoint-up(md) {
+    margin-left: 20px;
+  }
+}
+
 .time-title {
   position: absolute;
   z-index: 12;
@@ -398,30 +418,6 @@
   }
 }
 
-.column-text {
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: 25px;
-    width: 2px;
-    height: 10px;
-    background: $black;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 40px;
-    left: 25px;
-    width: 2px;
-    height: 10px;
-    background: $gray-600;
-  }
-}
-
 .content-parallax {
   h2 {
     font-size: 45px;
@@ -439,6 +435,13 @@
 
 .owl-carousel .owl-video-playing .owl-video-play-icon,
 .owl-carousel .owl-video-playing .owl-video-tn { display:none }
+
+.owl-carousel .owl-video-tn {
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 // tour package
 .step-line {
