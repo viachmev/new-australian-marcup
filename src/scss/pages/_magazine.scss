@@ -140,7 +140,7 @@
     height: 400px;
 
     @include media-breakpoint-up(xl) {
-      height: 480px;
+      height: 530px;
     }
 
     img {
@@ -210,6 +210,14 @@
   object-fit: cover;
 
   @include media-breakpoint-up(md) {
-    height: 600px;
+    height: 650px;
+  }
+}
+
+.magazine-block-title {
+  font-size: 35px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 50px;
   }
 }

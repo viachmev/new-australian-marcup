@@ -104,21 +104,17 @@
     }
   }
 
-  img {
+  figure {
     margin: 30px 0;
   }
 }
 
 .article-slider {
   .slider-caption {
-    max-width: 400px;
-    padding: 50px 0;
+    max-width: 320px;
+    padding: 75px 0;
     width: 100%;
     color: $white;
-
-    @media (max-width: 1440px) {
-      max-width: 500px;
-    }
 
     h3 {
       color: $white;
@@ -234,7 +230,7 @@
       &::before {
         content: "";
         width: 380px;
-        height: 200px;
+        height: 220px;
         float: left;
       }
     }
@@ -252,7 +248,7 @@
       &::before {
         content: "";
         width: 380px;
-        height: 200px;
+        height: 220px;
         float: right;
       }
     }
@@ -283,9 +279,16 @@
   height: 500px;
   margin: 20px auto 0;
 
-
   @include media-breakpoint-up(md) {
     height: 800px;
+  }
+
+  a {
+    transition: transform .3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 
@@ -320,4 +323,8 @@
 
 .font-noto {
   font-family: 'Noto Serif KR', serif;
+}
+
+.swiper_wrapper .swiper-container {
+  position: relative;
 }
