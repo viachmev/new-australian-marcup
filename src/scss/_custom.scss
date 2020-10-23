@@ -725,3 +725,30 @@
     }
   }
 }
+
+.gm-svpc img {
+  max-width: none !important;
+}
+
+
+// canvas slider
+.ug-slider-wrapper .ug-zoompanel {
+  display: none;
+}
+
+.ug-button-play.ug-skin-default.ug-stop-mode {
+  display: none;
+}
+
+.ug-button-fullscreen.ug-skin-default {
+  display: none;
+}
+
+.ug-gallery-wrapper .ug-canvas-pie {
+  display: none !important;
+}
+
+.ug-gallery-wrapper .ug-textpanel-title {
+  font-weight: normal !important;
+  font-family: $body-font;
+}
