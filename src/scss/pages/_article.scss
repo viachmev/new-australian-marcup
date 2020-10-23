@@ -236,8 +236,12 @@
     }
 
     .grid-slider {
-      top: 20px;
+      top: 0;
       left: 0;
+
+      @include media-breakpoint-up(md) {
+        top: 20px;
+      }
     }
   }
 
@@ -254,8 +258,12 @@
     }
 
     .grid-slider {
-      top: 20px;
+      top: 0;
       right: 0;
+
+      @include media-breakpoint-up(md) {
+        top: 20px;
+      }
     }
   }
 }
@@ -263,10 +271,30 @@
 .grid-slider {
   position: relative;
   width: 100%;
+  margin-bottom: 30px;
 
   @include media-breakpoint-up(md) {
     width: 350px;
     position: absolute;
+  }
+
+  .fslider,
+  .fslider .flexslider,
+  .fslider .slide,
+  .fslider .slider-wrap {
+    overflow: visible;
+  }
+
+  .flex-caption {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    text-shadow: none;
+    font-weight: bold;
+    color: $body-text-color;
+    font-size: 80%!important;
+
   }
 }
 
