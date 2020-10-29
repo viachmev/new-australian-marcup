@@ -174,10 +174,6 @@
   }
 }
 
-.bg-black {
-  background-color: $black;
-}
-
 .carousel-widget {
   .btn {
     border-color: $white;
@@ -218,7 +214,7 @@
   font-weight: bold;
   font-size: 35px;
   line-height: 1.2;
-  color: $text-color;
+  color: $black;
 
   @include media-breakpoint-up(md) {
     font-size: 50px;
@@ -488,4 +484,40 @@
 
 .magazine-abtv-thumb {
   border-radius: 20px;
+}
+
+.magazine-mockup {
+  position: relative;
+  display: block;
+
+  .button {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+
+    @include media-breakpoint-up(md) {
+      bottom: 10px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      bottom: 40px;
+    }
+  }
+}
+
+.magazine-landing-title {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: relative;
+  font-size: 60px;
+  line-height: 1;
+  font-weight: 900;
+  color: $white;
+
+  .line {
+    margin: 0;
+    border-top: 2px solid rgba($white, .5);
+  }
 }
