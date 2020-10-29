@@ -50,7 +50,7 @@
             <div class="shape-divider" style="z-index: 11" data-shape="valley" data-flip="true" data-flip-vertical="true" data-fill="#646464" data-position="bottom" data-height="60" id="shape-divider-6341"></div>
             <div class="vertical-middle" style="z-index: 11">
                 <div class="container">
-                    <div class="center mx-auto" style="max-width: 900px;">
+                    <div class="center mx-auto mt-6" style="max-width: 900px;">
                         <h1 class="text-white font-playfair">Can new science save dying coral reefs?</h1>
                     </div>
                 </div>
@@ -360,7 +360,7 @@
         </div>
     </section>
 
-    <section class="section m-0" style="background-image: url('/images/wood-bg.jpg')">
+    <section class="section m-0" style="background-image: url('images/wood-bg.jpg')">
         <div class="container">
             <div class="magazine-tv vimeo-viewport">
                 <iframe src="https://player.vimeo.com/video/112836958?&quality=1080p" width="1280" height="720" allowfullscreen></iframe>
@@ -368,7 +368,7 @@
         </div>
     </section>
 
-    <section class="section m-0" style="background-image: url('/images/wood-bg.jpg')">
+    <section class="section m-0" style="background-image: url('images/wood-bg.jpg')">
         <div class="container">
             <h2 class="text-white font-playfair">ABTV latest Videos</h2>
             <div class="heart-divider">
@@ -376,33 +376,33 @@
             </div>
             <div class="row col-mb-30 mt-4">
                 <div class="col-md-6 col-lg-4">
-                    <a href="#">
-                        <img src="https://img.youtube.com/vi/RLOsQViPLhw/maxresdefault.jpg" alt="" class="magazine-abtv-thumb">
+                    <a href="#" class="magazine-abtv-thumb">
+                        <img src="https://img.youtube.com/vi/RLOsQViPLhw/maxresdefault.jpg" alt="">
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <a href="#">
-                        <img src="https://img.youtube.com/vi/OrIDTJH2ZZM/maxresdefault.jpg" alt="" class="magazine-abtv-thumb">
+                    <a href="#" class="magazine-abtv-thumb">
+                        <img src="https://img.youtube.com/vi/OrIDTJH2ZZM/maxresdefault.jpg" alt="">
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <a href="#">
-                        <img src="https://img.youtube.com/vi/RLOsQViPLhw/maxresdefault.jpg" alt="" class="magazine-abtv-thumb">
+                    <a href="#" class="magazine-abtv-thumb">
+                        <img src="https://img.youtube.com/vi/RLOsQViPLhw/maxresdefault.jpg" alt="">
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <a href="#">
-                        <img src="https://img.youtube.com/vi/OrIDTJH2ZZM/maxresdefault.jpg" alt="" class="magazine-abtv-thumb">
+                    <a href="#" class="magazine-abtv-thumb">
+                        <img src="https://img.youtube.com/vi/OrIDTJH2ZZM/maxresdefault.jpg" alt="">
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <a href="#">
-                        <img src="https://img.youtube.com/vi/RLOsQViPLhw/maxresdefault.jpg" alt="" class="magazine-abtv-thumb">
+                    <a href="#" class="magazine-abtv-thumb">
+                        <img src="https://img.youtube.com/vi/RLOsQViPLhw/maxresdefault.jpg" alt="">
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <a href="#">
-                        <img src="https://img.youtube.com/vi/OrIDTJH2ZZM/maxresdefault.jpg" alt="" class="magazine-abtv-thumb">
+                    <a href="#" class="magazine-abtv-thumb">
+                        <img src="https://img.youtube.com/vi/OrIDTJH2ZZM/maxresdefault.jpg" alt="">
                     </a>
                 </div>
             </div>
@@ -503,6 +503,10 @@
         }
       }
     });
+
+    $('.carousel-magazine .swiper-slide').on('mouseover', function() {
+      slidercontent.slideTo($(this).index());
+    })
   });
 </script>
 
