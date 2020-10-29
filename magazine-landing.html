@@ -17,43 +17,65 @@
 </head>
 <body>
 <main class="include-header">
-    <div class="magazine-nav">
+    <div class="magazine-nav dark">
         <div class="container-fluid">
-            <div class="d-flex justify-content-center flex-column flex-md-row">
+            <div class="d-flex justify-content-center flex-column flex-md-row top-search-mag">
                 <ul class="menu-container">
-                    <li class="menu-item"><a class="menu-link" href="#"><div>INSPIRATION</div></a></li>
-                    <li class="menu-item"><a class="menu-link" href="#"><div>DESTINATIONS</div></a></li>
-                    <li class="menu-item"><a class="menu-link" href="#"><div>AIR</div></a></li>
-                    <li class="menu-item"><a class="menu-link" href="#"><div>EARTH</div></a></li>
-                    <li class="menu-item"><a class="menu-link" href="#"><div>WATER</div></a></li>
+                    <li class="menu-item"><a class="menu-link" href="#"><div>ABOUT US</div></a></li>
+                    <li class="menu-item"><a class="menu-link" href="#"><div>WORK WITH US</div></a></li>
                 </ul>
 
-                <div class="d-none d-lg-flex align-items-center px-4">
+                <div class="d-none d-md-flex align-items-center px-4">
                     <a href="#" class="standard-logo"><img src="images/ab_logo.svg" alt="Canvas Logo"></a>
                 </div>
 
                 <ul class="menu-container">
-                    <li class="menu-item"><a class="menu-link" href="#"><div>INTERVIEWS</div></a></li>
-                    <li class="menu-item"><a class="menu-link" href="#"><div>REVIEWS</div></a></li>
-                    <li class="menu-item"><a class="menu-link" href="#"><div>NEWS</div></a></li>
-                    <li class="menu-item"><a class="menu-link" href="#"><div>FOUNDATION</div></a></li>
+                    <li class="menu-item"><a class="menu-link" href="#"><div>ABTV</div></a></li>
+                    <li class="menu-item"><a class="menu-link" href="#"><div>BRANDS</div></a></li>
                 </ul>
             </div>
+
+            <div id="top-search" class="header-misc-icon">
+                <a href="#" id="top-search-trigger"><i class="icon-line-search"></i><i class="icon-line-cross"></i></a>
+            </div>
+
+            <form class="top-search-form" action="#" method="get">
+                <input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter.." autocomplete="off">
+            </form>
         </div>
     </div>
 
-    <section class="video-bg slider-element article-hero min-vh-80">
+    <section class="video-bg slider-element article-hero min-vh-90">
         <div class="slider-inner">
             <div class="shape-divider" style="z-index: 11" data-shape="valley" data-flip="true" data-flip-vertical="true" data-fill="#646464" data-position="bottom" data-height="60" id="shape-divider-6341"></div>
             <div class="vertical-middle" style="z-index: 11">
                 <div class="container">
-                    <div class="center mx-auto" style="max-width: 900px;">
+                    <div class="center mx-auto mt-6" style="max-width: 900px;">
+                        <div class="magazine-landing-title mb-3">
+                            <div class="line"></div>
+                            <div class="mx-4">SOAK</div>
+                            <div class="line"></div>
+                        </div>
                         <h1 class="text-white font-playfair">Can new science save dying coral reefs?</h1>
                     </div>
                 </div>
             </div>
-            <div class="video-wrap">
-                <iframe class="no-fv" src="https://player.vimeo.com/video/112836958?autoplay=1&loop=1&background=1&quality=1080p" allowfullscreen></iframe>
+<!--            <div class="video-wrap">-->
+<!--                <iframe class="no-fv" src="https://player.vimeo.com/video/112836958?autoplay=1&loop=1&background=1&quality=1080p" allowfullscreen></iframe>-->
+<!--            </div>-->
+            <div class="slider-element swiper_wrapper h-100 position-absolute" style="top: 0; left: 0" data-autoplay="4000" data-loop="true">
+                <div class="slider-inner">
+                    <div class="swiper-container swiper-parent">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-bg" style="background-image: url('images/slider/1.jpg'); background-position: center top;"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-bg" style="background-image: url('images/slider/2.jpg'); background-position: center top;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="video-overlay" style="background: rgba(0,0,0,0.4);"></div>
         </div>
@@ -103,7 +125,7 @@
 
     <section class="section m-0 bg-black">
         <div class="container">
-            <h2 class="text-white font-playfair magazine-block-title">Latest from Adventure Bay</h2>
+            <h2 class="text-white font-playfair magazine-block-title">Latest Stories</h2>
             <div class="heart-divider">
                 <img src="images/heart-white.svg" alt="heart-icon" style="width: 50px">
             </div>
@@ -292,143 +314,196 @@
 
     <section class="section m-0 bg-black">
         <div class="container">
-            <h2 class="text-white font-playfair magazine-block-title">Explore by Category</h2>
+            <h2 class="text-white font-playfair magazine-block-title">Latest Videos</h2>
             <div class="heart-divider">
                 <img src="images/heart-white.svg" alt="heart-icon" style="width: 50px">
             </div>
         </div>
-        <div class="owl-carousel owl-carousel-full carousel-widget mt-5" data-margin="0" data-pagi="false" data-items-xs="1" data-items-sm="2" data-items-md="3" data-items-lg="4">
-            <article class="portfolio-item">
-                <div class="grid-inner">
-                    <div class="portfolio-image">
-                        <a href="#">
+        <div class="container">
+            <div class="owl-carousel carousel-widget magazine-carousel mt-5" data-margin="35" data-pagi="false" data-items-xs="1" data-items-sm="2" data-items-md="2" data-items-xl="3">
+                <article class="portfolio-item">
+                    <div class="grid-inner">
+                        <div class="portfolio-image">
                             <img src="images/4/3.jpg" alt="Mac Sunglasses">
-                        </a>
-                        <div class="bg-overlay">
-                            <div class="bg-overlay-content dark flex-column" data-hover-animate="fadeIn">
-                                <div class="portfolio-desc pt-0 center" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
-                                    <h2>Article Title</h2>
+                            <div class="bg-overlay d-flex align-items-end justify-content-center">
+                                <div class="d-flex flex-column pb-5 px-3">
+                                    <div class="portfolio-desc pt-0 center">
+                                        <h2 class="text-white font-playfair">Article Title Article Very Long Title Long</h2>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="#" class="btn text-uppercase px-1 py-0" data-hover-animate="fadeInUpSmall" data-hover-animate-out="fadeOutDownSmall" data-hover-speed="350">
+                                            <i class="icon-heart"></i>
+                                            <span>EXPLORE</span>
+                                            <i class="icon-line-arrow-right"></i>
+                                        </a>
+                                    </div>
                                 </div>
-
-                                <div class="d-flex">
-                                    <a href="#" class="btn text-uppercase px-1 py-0" data-hover-animate="fadeInUpSmall" data-hover-animate-out="fadeOutDownSmall" data-hover-speed="350">
-                                        <i class="icon-heart"></i>
-                                        <span>EXPLORE</span>
-                                        <i class="icon-line-arrow-right"></i>
-                                    </a>
-                                </div>
+                                <div class="bg-overlay-bg dark" style="z-index: -1"></div>
                             </div>
-                            <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
                         </div>
                     </div>
-                </div>
-            </article>
-            <article class="portfolio-item">
-                <div class="grid-inner">
-                    <div class="portfolio-image">
-                        <a href="#">
-                            <img src="images/4/2.jpg" alt="Mac Sunglasses">
-                        </a>
-                        <div class="bg-overlay">
-                            <div class="bg-overlay-content dark flex-column" data-hover-animate="fadeIn">
-                                <div class="portfolio-desc pt-0 center" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
-                                    <h2>Article Title</h2>
+                </article>
+                <article class="portfolio-item">
+                    <div class="grid-inner">
+                        <div class="portfolio-image">
+                            <img src="images/4/4.jpg" alt="Mac Sunglasses">
+                            <div class="bg-overlay d-flex align-items-end justify-content-center">
+                                <div class="d-flex flex-column pb-5 px-3">
+                                    <div class="portfolio-desc pt-0 center">
+                                        <h2 class="text-white font-playfair">Article Title Article Title</h2>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="#" class="btn text-uppercase px-1 py-0" data-hover-animate="fadeInUpSmall" data-hover-animate-out="fadeOutDownSmall" data-hover-speed="350">
+                                            <i class="icon-heart"></i>
+                                            <span>EXPLORE</span>
+                                            <i class="icon-line-arrow-right"></i>
+                                        </a>
+                                    </div>
                                 </div>
-
-                                <div class="d-flex">
-                                    <a href="#" class="btn text-uppercase px-1 py-0" data-hover-animate="fadeInUpSmall" data-hover-animate-out="fadeOutDownSmall" data-hover-speed="350">
-                                        <i class="icon-heart"></i>
-                                        <span>EXPLORE</span>
-                                        <i class="icon-line-arrow-right"></i>
-                                    </a>
-                                </div>
+                                <div class="bg-overlay-bg dark" style="z-index: -1"></div>
                             </div>
-                            <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
                         </div>
                     </div>
-                </div>
-            </article>
-            <article class="portfolio-item">
-                <div class="grid-inner">
-                    <div class="portfolio-image">
-                        <a href="#">
+                </article>
+                <article class="portfolio-item">
+                    <div class="grid-inner">
+                        <div class="portfolio-image">
                             <img src="images/4/5.jpg" alt="Mac Sunglasses">
-                        </a>
-                        <div class="bg-overlay">
-                            <div class="bg-overlay-content dark flex-column" data-hover-animate="fadeIn">
-                                <div class="portfolio-desc pt-0 center" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
-                                    <h2>Article Title</h2>
+                            <div class="bg-overlay d-flex align-items-end justify-content-center">
+                                <div class="d-flex flex-column pb-5 px-3">
+                                    <div class="portfolio-desc pt-0 center">
+                                        <h2 class="text-white font-playfair">Article Title</h2>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="#" class="btn text-uppercase px-1 py-0" data-hover-animate="fadeInUpSmall" data-hover-animate-out="fadeOutDownSmall" data-hover-speed="350">
+                                            <i class="icon-heart"></i>
+                                            <span>EXPLORE</span>
+                                            <i class="icon-line-arrow-right"></i>
+                                        </a>
+                                    </div>
                                 </div>
-
-                                <div class="d-flex">
-                                    <a href="#" class="btn text-uppercase px-1 py-0" data-hover-animate="fadeInUpSmall" data-hover-animate-out="fadeOutDownSmall" data-hover-speed="350">
-                                        <i class="icon-heart"></i>
-                                        <span>EXPLORE</span>
-                                        <i class="icon-line-arrow-right"></i>
-                                    </a>
-                                </div>
+                                <div class="bg-overlay-bg dark" style="z-index: -1"></div>
                             </div>
-                            <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
                         </div>
                     </div>
-                </div>
-            </article>
-            <article class="portfolio-item">
-                <div class="grid-inner">
-                    <div class="portfolio-image">
-                        <a href="#">
-                            <img src="images/4/3.jpg" alt="Mac Sunglasses">
-                        </a>
-                        <div class="bg-overlay">
-                            <div class="bg-overlay-content dark flex-column" data-hover-animate="fadeIn">
-                                <div class="portfolio-desc pt-0 center" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
-                                    <h2>Article Title</h2>
-                                </div>
-
-                                <div class="d-flex">
-                                    <a href="#" class="btn text-uppercase px-1 py-0" data-hover-animate="fadeInUpSmall" data-hover-animate-out="fadeOutDownSmall" data-hover-speed="350">
-                                        <i class="icon-heart"></i>
-                                        <span>EXPLORE</span>
-                                        <i class="icon-line-arrow-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="portfolio-item">
-                <div class="grid-inner">
-                    <div class="portfolio-image">
-                        <a href="#">
+                </article>
+                <article class="portfolio-item">
+                    <div class="grid-inner">
+                        <div class="portfolio-image">
                             <img src="images/4/6.jpg" alt="Mac Sunglasses">
-                        </a>
-                        <div class="bg-overlay">
-                            <div class="bg-overlay-content dark flex-column" data-hover-animate="fadeIn">
-                                <div class="portfolio-desc pt-0 center" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
-                                    <h2>Article Title</h2>
+                            <div class="bg-overlay d-flex align-items-end justify-content-center">
+                                <div class="d-flex flex-column pb-5 px-3">
+                                    <div class="portfolio-desc pt-0 center">
+                                        <h2 class="text-white font-playfair">Article Title</h2>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="#" class="btn text-uppercase px-1 py-0" data-hover-animate="fadeInUpSmall" data-hover-animate-out="fadeOutDownSmall" data-hover-speed="350">
+                                            <i class="icon-heart"></i>
+                                            <span>EXPLORE</span>
+                                            <i class="icon-line-arrow-right"></i>
+                                        </a>
+                                    </div>
                                 </div>
-
-                                <div class="d-flex">
-                                    <a href="#" class="btn text-uppercase px-1 py-0" data-hover-animate="fadeInUpSmall" data-hover-animate-out="fadeOutDownSmall" data-hover-speed="350">
-                                        <i class="icon-heart"></i>
-                                        <span>EXPLORE</span>
-                                        <i class="icon-line-arrow-right"></i>
-                                    </a>
-                                </div>
+                                <div class="bg-overlay-bg dark" style="z-index: -1"></div>
                             </div>
-                            <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
                         </div>
                     </div>
-                </div>
-            </article>
+                </article>
+                <article class="portfolio-item">
+                    <div class="grid-inner">
+                        <div class="portfolio-image">
+                            <img src="images/4/7.jpg" alt="Mac Sunglasses">
+                            <div class="bg-overlay d-flex align-items-end justify-content-center">
+                                <div class="d-flex flex-column pb-5 px-3">
+                                    <div class="portfolio-desc pt-0 center">
+                                        <h2 class="text-white font-playfair">Article Title</h2>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="#" class="btn text-uppercase px-1 py-0" data-hover-animate="fadeInUpSmall" data-hover-animate-out="fadeOutDownSmall" data-hover-speed="350">
+                                            <i class="icon-heart"></i>
+                                            <span>EXPLORE</span>
+                                            <i class="icon-line-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="bg-overlay-bg dark" style="z-index: -1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="portfolio-item">
+                    <div class="grid-inner">
+                        <div class="portfolio-image">
+                            <img src="images/4/8.jpg" alt="Mac Sunglasses">
+                            <div class="bg-overlay d-flex align-items-end justify-content-center">
+                                <div class="d-flex flex-column pb-5 px-3">
+                                    <div class="portfolio-desc pt-0 center">
+                                        <h2 class="text-white font-playfair">Article Title</h2>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="#" class="btn text-uppercase px-1 py-0" data-hover-animate="fadeInUpSmall" data-hover-animate-out="fadeOutDownSmall" data-hover-speed="350">
+                                            <i class="icon-heart"></i>
+                                            <span>EXPLORE</span>
+                                            <i class="icon-line-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="bg-overlay-bg dark" style="z-index: -1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="portfolio-item">
+                    <div class="grid-inner">
+                        <div class="portfolio-image">
+                            <img src="images/4/9.jpg" alt="Mac Sunglasses">
+                            <div class="bg-overlay d-flex align-items-end justify-content-center">
+                                <div class="d-flex flex-column pb-5 px-3">
+                                    <div class="portfolio-desc pt-0 center">
+                                        <h2 class="text-white font-playfair">Article Title</h2>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="#" class="btn text-uppercase px-1 py-0" data-hover-animate="fadeInUpSmall" data-hover-animate-out="fadeOutDownSmall" data-hover-speed="350">
+                                            <i class="icon-heart"></i>
+                                            <span>EXPLORE</span>
+                                            <i class="icon-line-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="bg-overlay-bg dark" style="z-index: -1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="portfolio-item">
+                    <div class="grid-inner">
+                        <div class="portfolio-image">
+                            <img src="images/4/10.jpg" alt="Mac Sunglasses">
+                            <div class="bg-overlay d-flex align-items-end justify-content-center">
+                                <div class="d-flex flex-column pb-5 px-3">
+                                    <div class="portfolio-desc pt-0 center">
+                                        <h2 class="text-white font-playfair">Article Title</h2>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="#" class="btn text-uppercase px-1 py-0" data-hover-animate="fadeInUpSmall" data-hover-animate-out="fadeOutDownSmall" data-hover-speed="350">
+                                            <i class="icon-heart"></i>
+                                            <span>EXPLORE</span>
+                                            <i class="icon-line-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="bg-overlay-bg dark" style="z-index: -1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </div>
     </section>
 
     <section class="section m-0 bg-black">
         <div class="container">
-            <h2 class="text-white font-playfair">Latest Videos</h2>
+            <h2 class="text-white font-playfair">Underwater Stories</h2>
             <div class="heart-divider">
                 <img src="images/heart-white.svg" alt="heart-icon" style="width: 50px">
             </div>
@@ -566,7 +641,7 @@
 
     <section class="section bg-transparent m-0">
         <div class="container">
-            <h2 class="font-playfair">Latest Interviews</h2>
+            <h2 class="font-playfair text-black">Sonder <span class="font-italic text-half nocolor">Interviews of local legends</span></h2>
             <div class="heart-divider">
                 <img src="images/heart.svg" alt="heart-icon" style="width: 50px">
             </div>
@@ -633,7 +708,7 @@
 
     <section class="section bg-transparent  m-0">
         <div class="container">
-            <h2 class="font-playfair">Our Most Popular Article</h2>
+            <h2 class="font-playfair text-black">Our Most Popular Article</h2>
             <div class="heart-divider">
                 <img src="images/heart.svg" alt="heart-icon" style="width: 50px">
             </div>
@@ -656,7 +731,7 @@
 
     <section class="section bg-transparent  m-0">
         <div class="container">
-            <h2 class="font-playfair">Inspiration</h2>
+            <h2 class="font-playfair text-black">Inspiration</h2>
             <div class="heart-divider">
                 <img src="images/heart.svg" alt="heart-icon" style="width: 50px">
             </div>
@@ -677,70 +752,148 @@
         </div>
     </section>
 
-    <section class="section bg-transparent m-0">
-        <div class="container">
-            <h2>This month’s stories</h2>
+    <section class="section m-0 position-relative" style="background-color: #B9B8B6">
+        <div class="shape-divider" style="z-index: 11;" data-shape="wave-4" data-position="top" data-height="80" id="shape-divider-6345"></div>
+        <div class="container mt-5">
+            <h2 class="font-playfair text-black">Read Adventure Bay Magazine</h2>
             <div class="heart-divider">
                 <img src="images/heart.svg" alt="heart-icon" style="width: 50px">
             </div>
-            <div class="owl-carousel carousel-widget posts-md mt-5" data-pagi="false" data-items-xs="1" data-items-sm="2" data-items-md="3" data-items-lg="4">
-                <div class="oc-item">
-                    <div class="entry">
-                        <div class="entry-image">
-                            <iframe src="https://player.vimeo.com/video/87701971" width="500" height="281" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                        </div>
-                        <h4 class="font-weight-normal mt-3">The Long Title of the Video Here</h4>
-                        <div class="entry-meta text-small">
-                            September 14, 2020
-                        </div>
+        </div>
+        <a href="#" class="magazine-mockup mt-4">
+            <img src="images/mag-mockup.jpg" alt="mag-mockup">
+            <span class="button button-rounded button-reveal button-small mt-4 text-right text-center"><span>Read Adventure Bay Magazine</span><i class="icon-angle-right"></i></a>
+        </a>
+    </section>
+
+    <section class="section m-0 bg-transparent position-relative">
+        <div class="position-absolute bg-black w-100" style="height: 30%; bottom: 0;">
+            <div class="shape-divider" data-shape="wave-4" style="z-index: 0;" data-position="top" data-height="60" id="shape-divider-6345"></div>
+        </div>
+        <div class="container">
+            <h2 class="font-playfair text-black">Read Previous Adventure Bay Magazine</h2>
+            <div class="heart-divider">
+                <img src="images/heart.svg" alt="heart-icon" style="width: 50px">
+            </div>
+            <div class="mt-5 swiper-container carousel-magazine">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url('https://placeimg.com/430/550/nature?t=1603698197265')">
+                        <img class="responsive-img" src="https://placeimg.com/430/550/nature?t=1603698197265" alt="image">
+                        <a href="#" class="btn text-uppercase px-1 border py-0 text-white">
+                            <i class="icon-heart"></i>
+                            <span>EXPLORE</span>
+                            <i class="icon-line-chevron-right"></i>
+                        </a>
                     </div>
-                </div>
-                <div class="oc-item">
-                    <div class="entry">
-                        <div class="entry-image">
-                            <iframe src="https://player.vimeo.com/video/87701971" width="500" height="281" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                        </div>
-                        <h4 class="font-weight-normal mt-3">The Long Title of the Video Here</h4>
-                        <div class="entry-meta text-small">
-                            September 14, 2020
-                        </div>
+                    <div class="swiper-slide" style="background-image: url('https://placeimg.com/430/550/nature?t=1603698255647')">
+                        <img class="responsive-img" src="https://placeimg.com/430/550/nature?t=1603698255647" alt="image">
+                        <a href="#" class="btn text-uppercase px-1 border py-0 text-white">
+                            <i class="icon-heart"></i>
+                            <span>EXPLORE</span>
+                            <i class="icon-line-chevron-right"></i>
+                        </a>
                     </div>
-                </div>
-                <div class="oc-item">
-                    <div class="entry">
-                        <div class="entry-image">
-                            <iframe src="https://player.vimeo.com/video/87701971" width="500" height="281" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                        </div>
-                        <h4 class="font-weight-normal mt-3">The Long Title of the Video Here</h4>
-                        <div class="entry-meta text-small">
-                            September 14, 2020
-                        </div>
+                    <div class="swiper-slide" style="background-image: url('https://placeimg.com/430/550/nature?t=1603698273572')">
+                        <img class="responsive-img" src="https://placeimg.com/430/550/nature?t=1603698273572" alt="image">
+                        <a href="#" class="btn text-uppercase px-1 border py-0 text-white">
+                            <i class="icon-heart"></i>
+                            <span>EXPLORE</span>
+                            <i class="icon-line-chevron-right"></i>
+                        </a>
                     </div>
-                </div>
-                <div class="oc-item">
-                    <div class="entry">
-                        <div class="entry-image">
-                            <iframe src="https://player.vimeo.com/video/87701971" width="500" height="281" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                        </div>
-                        <h4 class="font-weight-normal mt-3">The Long Title of the Video Here</h4>
-                        <div class="entry-meta text-small">
-                            September 14, 2020
-                        </div>
+                    <div class="swiper-slide" style="background-image: url('https://placeimg.com/430/550/nature?t=1603698287403')">
+                        <img class="responsive-img" src="https://placeimg.com/430/550/nature?t=1603698287403" alt="image">
+                        <a href="#" class="btn text-uppercase px-1 border py-0 text-white">
+                            <i class="icon-heart"></i>
+                            <span>EXPLORE</span>
+                            <i class="icon-line-chevron-right"></i>
+                        </a>
                     </div>
-                </div>
-                <div class="oc-item">
-                    <div class="entry">
-                        <div class="entry-image">
-                            <iframe src="https://player.vimeo.com/video/87701971" width="500" height="281" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                        </div>
-                        <h4 class="font-weight-normal mt-3">The Long Title of the Video Here</h4>
-                        <div class="entry-meta text-small">
-                            September 14, 2020
-                        </div>
+                    <div class="swiper-slide" style="background-image: url('https://placeimg.com/430/550/nature?t=1603698298113')">
+                        <img class="responsive-img" src="https://placeimg.com/430/550/nature?t=1603698298113" alt="image">
+                        <a href="#" class="btn text-uppercase px-1 border py-0 text-white">
+                            <i class="icon-heart"></i>
+                            <span>EXPLORE</span>
+                            <i class="icon-line-chevron-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-            <a href="#" class="button button-rounded button-reveal button-small mt-5 text-right text-center"><span>View all</span><i class="icon-angle-right"></i></a>
+        </div>
+    </section>
+
+    <section class="section m-0" style="background-image: url('/images/wood-bg.jpg')">
+        <div class="container">
+            <div class="magazine-tv vimeo-viewport">
+                <iframe src="https://player.vimeo.com/video/112836958?&quality=1080p" width="1280" height="720" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="section m-0" style="background-image: url('/images/wood-bg.jpg')">
+        <div class="container">
+            <h2 class="text-white font-playfair">ABTV latest Videos</h2>
+            <div class="heart-divider">
+                <img src="images/heart.svg" alt="heart-icon" style="width: 50px">
+            </div>
+            <div class="row col-mb-30 mt-4">
+                <div class="col-md-6 col-lg-4">
+                    <a href="#">
+                        <img src="https://img.youtube.com/vi/RLOsQViPLhw/maxresdefault.jpg" alt="" class="magazine-abtv-thumb">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="#">
+                        <img src="https://img.youtube.com/vi/OrIDTJH2ZZM/maxresdefault.jpg" alt="" class="magazine-abtv-thumb">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="#">
+                        <img src="https://img.youtube.com/vi/RLOsQViPLhw/maxresdefault.jpg" alt="" class="magazine-abtv-thumb">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="#">
+                        <img src="https://img.youtube.com/vi/OrIDTJH2ZZM/maxresdefault.jpg" alt="" class="magazine-abtv-thumb">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="#">
+                        <img src="https://img.youtube.com/vi/RLOsQViPLhw/maxresdefault.jpg" alt="" class="magazine-abtv-thumb">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="#">
+                        <img src="https://img.youtube.com/vi/OrIDTJH2ZZM/maxresdefault.jpg" alt="" class="magazine-abtv-thumb">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section m-0 bg-black position-relative">
+        <div class="shape-divider" data-shape="wave-4" style="z-index: 0;" data-position="bottom" data-height="80" id="shape-divider-6347"></div>
+    </section>
+
+    <section class="section mt-0 bg-transparent">
+        <div class="container">
+            <h2 class="font-playfair text-black">Something here about accessibility</h2>
+            <div class="heart-divider">
+                <img src="images/heart.svg" alt="heart-icon" style="width: 50px">
+            </div>
+            <div class="mt-4">
+                <img src="https://img.pngio.com/devices-png-94-images-in-collection-page-2-devices-png-1702_800.png" alt="">
+            </div>
+        </div>
+    </section>
+    </section>
+
+    <section>
+        <div class="follow-header py-5" style="background: #517489;">
+            <h2 class="center text-white"><span class="border text-white p-2">FOLLOW US</span> on <span class="pacifico text-white ml-1">Instagram</span></h2>
+        </div>
+        <div>
+            <div class="instagram-photos masonry-thumbs grid-4" data-user="blog.canvastemplate" data-count="8"></div>
         </div>
     </section>
 </main>
@@ -751,6 +904,69 @@
 <script src="js/plugins.min.js"></script>
 <!-- Footer Scripts
 ============================================= -->
+<script src="https://player.vimeo.com/api/player.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+
+    // exist in wordpress project
+    $('.top-search-form').click(function () {
+      $(this).find('input').focus();
+    });
+
+    const videos = $(".vimeo-viewport");
+    if (videos && $(window).width() > 768) {
+      function isScrolledIntoView(elem) {
+        let docViewTop = $(window).scrollTop();
+        let docViewBottom = docViewTop + $(window).height();
+
+        let elemTop = $(elem).offset().top;
+        let elemBottom = elemTop + $(elem).height();
+
+        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+      }
+
+      $(window).on('resize scroll', function () {
+        [...videos].forEach((video) => {
+          let player = new Vimeo.Player($(video).find('iframe'));
+          if (isScrolledIntoView($(video))) {
+            player.play();
+          } else {
+            player.pause();
+          }
+        })
+      })
+    }
+    //
+
+    // need to add in wordpress
+    var swiper = new Swiper('.carousel-magazine', {
+      effect: 'coverflow',
+      coverflowEffect: {
+        rotate: -15,
+        stretch: 0,
+        depth: 300,
+        modifier: 1,
+        slideShadows: false,
+      },
+      centeredSlides: true,
+      loop: true,
+      breakpoints: {
+        320: {
+          slidesPerView: 1.25
+        },
+
+        768: {
+          slidesPerView: 2
+        },
+
+        992: {
+          slidesPerView: 3
+        }
+      }
+    });
+  });
+</script>
 
 <script src="js/functions.js" ></script>
 </body>

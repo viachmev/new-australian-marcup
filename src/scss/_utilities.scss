@@ -66,6 +66,14 @@ span.middot {
 
 .text-black { color: $black }
 
+.bg-black {
+	background-color: $black;
+}
+
+.text-half {
+	font-size: 55% !important;
+}
+
 .inline-block {
 	float: none !important;
 	display: inline-block !important;
