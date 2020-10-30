@@ -306,6 +306,7 @@
   padding-bottom: 80px;
   .swiper-slide {
     position: relative;
+    cursor: grab;
 
     &::after {
       content: "";
@@ -323,10 +324,11 @@
 
     .btn {
       position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
+      left: 0;
+      right: 0;
       bottom: 20px;
       width: max-content;
+      margin: 0 auto;
 
       &:hover {
         background-color: $theme-color;
