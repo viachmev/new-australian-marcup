@@ -25,37 +25,37 @@
   }
 }
 
-.flex-control-nav:not(.flex-control-thumbs) {
-  left: 50%;
-  top: initial;
-  bottom: 25px;
-  transform: translateX(-50%);
-
-  @include media-breakpoint-up(sm) {
-    bottom: 100px;
-  }
-
-  li {
-    width: 75px;
-    height: 3px;
-
-    &:hover {
-      a {
-        background-color: $white;
-      }
-    }
-
-    a {
-      border: none;
-      border-radius: 0;
-      background-color: $theme-gold;
-
-      &.flex-active {
-        background-color: $white;
-      }
-    }
-  }
-}
+//.flex-control-nav:not(.flex-control-thumbs) {
+//  left: 50%;
+//  top: initial;
+//  bottom: 25px;
+//  transform: translateX(-50%);
+//
+//  @include media-breakpoint-up(sm) {
+//    bottom: 100px;
+//  }
+//
+//  li {
+//    width: 75px;
+//    height: 3px;
+//
+//    &:hover {
+//      a {
+//        background-color: $white;
+//      }
+//    }
+//
+//    a {
+//      border: none;
+//      border-radius: 0;
+//      background-color: $theme-gold;
+//
+//      &.flex-active {
+//        background-color: $white;
+//      }
+//    }
+//  }
+//}
 
 .rating-container {
   .caption,
@@ -96,6 +96,7 @@
 
   .pricing-price {
     padding: 0;
+    font-size: 2.5rem;
   }
 
 }
@@ -505,11 +506,6 @@
   text-transform: none;
 }
 
-.h2 {
-  font-size: $h2-font-size;
-  font-weight: $font-weight-bold;
-}
-
 // travel guide
 
 .toggle {
@@ -759,4 +755,51 @@
 
 .ug-gallery-wrapper .ug-handle-tip-left.ug-skin-default {
   display: none;
+}
+
+// Email sales page
+.mail-pricing {
+  .pricing-box {
+    background: $white;
+    box-shadow: 0 0 8px rgba(0,0,0,.1);
+  }
+
+  .pricing-title {
+    border-width: 2px;
+  }
+
+  .pricing-price {
+    font-size: 4rem;
+    font-weight: 500;
+
+    .price-tenure {
+      font-size: 1rem;
+      color: $black;
+    }
+
+    .price-unit {
+      font-size: 1.75rem;
+    }
+    
+    .price-info {
+      font-size: 0.85rem;
+      text-align: center;
+      font-weight: normal;
+      color: $body-text-color;
+    }
+  }
+
+  .pricing-features {
+    height: 380px;
+    font-size: 20px;
+    border-width: 2px;
+  }
+
+  .pricing-highlight {
+    margin: 0;
+
+    .pricing-features {
+      height: 450px;
+    }
+  }
 }
