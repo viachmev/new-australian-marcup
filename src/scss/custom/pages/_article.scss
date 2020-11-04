@@ -4,7 +4,7 @@
     line-height: 1;
 
     @include media-breakpoint-up(md) {
-      font-size: 76px;
+      font-size: 80px;
     }
   }
 }
@@ -285,6 +285,11 @@
     overflow: visible;
   }
 
+  .flex-prev.flex-disabled,
+  .flex-next.flex-disabled {
+    display: none;
+  }
+
   .flex-caption {
     position: absolute;
     width: 100%;
@@ -294,7 +299,6 @@
     font-weight: bold;
     color: $body-text-color;
     font-size: 80%!important;
-
   }
 }
 
