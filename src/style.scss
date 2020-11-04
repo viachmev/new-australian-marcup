@@ -61,9 +61,8 @@
 // Dark
 @import "scss/dark";
 
-@import "scss/custom";
-
-// Style for pages
-@import "scss/pages/accommodation";
-@import "scss/pages/article";
-@import "scss/pages/magazine";
+// custom styles
+@import "scss/custom/styles";
+@import "scss/custom/pages/accommodation";
+@import "scss/custom/pages/article";
+@import "scss/custom/pages/magazine";
