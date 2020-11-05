@@ -231,6 +231,7 @@
     img {
       height: 100%;
       object-fit: cover;
+      object-position: center;
     }
   }
 
@@ -287,11 +288,21 @@
 }
 
 .popular-article-img {
-  height: auto;
-  object-fit: cover;
+  overflow: hidden;
 
-  @include media-breakpoint-up(md) {
-    height: 650px;
+  img {
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    transition: all .3s ease;
+
+    @include media-breakpoint-up(md) {
+      height: 650px;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }
 
@@ -740,6 +751,12 @@
   .container {
     @media (min-width: 1440px) {
       max-width: 1230px;
+    }
+  }
+
+  .owl-carousel:not(.magazine-carousel) {
+    .owl-item:hover {
+      animation: headShake 1s ease;
     }
   }
 
