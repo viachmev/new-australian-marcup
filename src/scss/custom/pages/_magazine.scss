@@ -719,10 +719,16 @@
 }
 
 .magazine-wrap {
+  overflow: hidden;
+
   .container {
     @media (min-width: 1440px) {
       max-width: 1230px;
     }
+  }
+
+  .shape-divider {
+    overflow: visible;
   }
 
   h4 {
