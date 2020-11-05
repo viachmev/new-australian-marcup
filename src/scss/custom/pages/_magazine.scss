@@ -337,10 +337,16 @@
     bottom: 50px;
     text-align: center;
     color: $white;
-    font-size: 12px;
+    font-size: 11px;
+    font-family: 'Noto Serif KR', serif;
 
     @include media-breakpoint-up(md) {
-      bottom: 55px;
+      font-size: 14px;
+      bottom: 60px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      bottom: 70px;
       font-size: 16px;
     }
   }
