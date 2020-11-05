@@ -363,7 +363,6 @@
   }
 
   .btn {
-    width: 126px;
     position: absolute;
     left: 50%;
     bottom: 10px;
@@ -436,7 +435,6 @@
       left: 0;
       right: 0;
       bottom: 20px;
-      width: 126px;
       margin: 0 auto;
 
       &:hover {
@@ -766,6 +764,7 @@
 
   .btn {
     font-family: 'Noto Serif KR', serif;
+    width: 127px;
   }
 
 
