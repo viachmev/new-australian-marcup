@@ -360,3 +360,16 @@
 .swiper_wrapper .swiper-container {
   position: relative;
 }
+
+.article-wrap {
+  .content-parallax {
+    font-family: 'Playfair Display', serif;
+    h2 {
+      font-size: 54px;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700!important;
+      line-height: 1.2;
+      color: $black!important;
+    }
+  }
+}
