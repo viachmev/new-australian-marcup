@@ -748,13 +748,25 @@
 
   .container {
     @media (min-width: 1440px) {
-      max-width: 1230px;
+      max-width: 1150px;
     }
   }
 
   .owl-carousel:not(.magazine-carousel) {
-    .owl-item:hover {
-      animation: headShake 1s ease;
+    .owl-item {
+      padding-top: 5px;
+      padding-bottom: 5px;
+
+      &:hover {
+        animation: pop .4s linear;
+        animation-iteration-count: 1;
+      }
+    }
+  }
+
+  @keyframes pop {
+    50% {
+      transform: scale(1.05);
     }
   }
 
