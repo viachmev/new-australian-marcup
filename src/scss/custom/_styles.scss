@@ -199,6 +199,7 @@
     font-size: 48px;
     line-height: 1;
     color: white;
+    font-weight: 700;
 
     @include media-breakpoint-up(md) {
       font-size: 100px;

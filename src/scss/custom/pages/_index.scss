@@ -1,0 +1,71 @@
+.index-hero {
+  h1 {
+    font-size: 80px;
+  }
+}
+
+
+.index-flip-wrap {
+  .flip-card-tag {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    padding: 2px 15px;
+    max-width: 225px;
+    background: $theme-color;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16);
+    font-size: 12px;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .flip-card-back, .flip-card-front {
+    height: 300px;
+  }
+
+  .card-title {
+    margin-bottom: 0;
+    line-height: 1.2;
+  }
+}
+
+.index-slider {
+
+  .entry {
+    &:hover {
+      h4 {
+        color: $theme-color;
+      }
+
+      .entry-image img {
+        transform: scale(1.05);
+      }
+
+    }
+
+    .entry-image {
+      overflow: hidden;
+      img {
+        border-radius: 0;
+        transition: all .3s ease;
+      }
+    }
+
+    h4 {
+      font-size: 16px;
+      padding-left: 20px;
+      transition: all .3s ease;
+    }
+  }
+
+  &.owl-carousel:hover .owl-nav {
+    .owl-prev {
+      left: 15px;
+    }
+
+    .owl-next {
+      right: 15px;
+    }
+  }
+}
