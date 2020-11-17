@@ -111,6 +111,16 @@
 
 .article-slider {
 
+  &.swiper_wrapper .swiper-container {
+    position: relative;
+    min-height: 120vh;
+
+    .swiper-slide {
+      height: auto;
+      min-height: 120vh;
+    }
+  }
+
   .swiper-button-disabled {
     display: none;
   }
@@ -207,7 +217,7 @@
     position: relative;
     margin: 0;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 52px;
     line-height: 1;
     text-align: center;
     border: 0;
@@ -369,10 +379,6 @@
 
 .font-noto {
   font-family: 'Noto Serif KR', serif;
-}
-
-.swiper_wrapper .swiper-container {
-  position: relative;
 }
 
 .article-wrap {
