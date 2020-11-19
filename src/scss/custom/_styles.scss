@@ -180,7 +180,6 @@
     z-index: -1;
   }
 
-  // unused style (subtitle moved to bottom)
   .subtitle {
     margin-top: 30px;
     font-size: 25px;
@@ -189,20 +188,20 @@
     font-weight: bold;
 
     @include media-breakpoint-up(md) {
-      margin-top: 50px;
-      font-size: 35px;
+      font-size: 32px;
     }
   }
   //
 
-  h1 {
+  h1, .h1 {
     font-size: 48px;
     line-height: 1;
     color: white;
     font-weight: 700;
+    z-index: 1;
 
     @include media-breakpoint-up(md) {
-      font-size: 100px;
+      font-size: 80px;
     }
 
     @media (max-width: 320px) {
@@ -264,7 +263,7 @@
     color: white;
 
     @include media-breakpoint-up(md) {
-      font-size: 100px;
+      font-size: 80px;
     }
 
     @media (max-width: 320px) {
