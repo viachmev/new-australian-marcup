@@ -1710,7 +1710,7 @@ only screen and (                min-resolution: 2dppx) {
 	}
 	input {
 		box-shadow: none !important;
-		pointer-events: none;
+		//pointer-events: none;
 		border-radius: 0;
 		border: 0;
 		outline: 0 !important;
